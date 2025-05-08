@@ -1,0 +1,26 @@
+# MkDocs build directory
+site/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# MkDocs configuration cache
+mkdocs.yml.lock
