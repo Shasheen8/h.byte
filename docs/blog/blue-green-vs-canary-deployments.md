@@ -107,12 +107,14 @@ graph TD
         G -->|Stable| H[New Version Live]
     end
 
-    classDef live fill:#bbdefb,stroke:#1976d2;
-    classDef idle fill:#ffccbc,stroke:#d84315;
-    classDef canary fill:#d4f4d4,stroke:#2e7d32;
+    classDef live fill:#54a0de,stroke:#1a2b4a,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+    classDef idle fill:#eb7550,stroke:#4a2b1f,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+    classDef canary fill:#5dcf5d,stroke:#1a4a2b,stroke-width:1px,color:#e0e6f0,rx:10px, ry:10px;
     class A,E,G,H live;
     class B,D idle;
     class F canary;
+
+    linkStyle default stroke:#b0bec5,stroke-width:1.5px,stroke-dasharray:5,2;
 ```
 
 ## Conclusion
