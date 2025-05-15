@@ -2,4 +2,82 @@
 title: How to protect your system from hackers and cyber attacks?
 date: Mon, 15 Feb 2021 16:05:00 +0000
 ---
-Your device, whether it be a phone, laptop or tablet might have access to some sensitive information. Your personal device might have access to your bank, messages, family pictures, work details, etc and if it gets compromised the information can be stolen, destroyed or used maliciously. You would definitely not want such sensitive information falling into the wrong hands.Let's discuss a few ways to protect your devices or systems against cyber attacks.Update existing software and install any patches for the system provided by authorized software vendors. There is a notion that if you install a patch for your system it would break the system, and that could happen but in most cases the chances of it breaking anything are highly unlikely. Updates and patches include security updates to the system which act as a first line of defense.Enable strong passwords. Always have password protected systems. Sometimes you have to log in to way too many things and it can be a real pain to keep track and remember these passwords, that being said it's better to develop and maintain this good practice instead of suffering a data breach. A strong password would be more than 10-12 characters, would include upper and lower case characters, numbers as well as special characters.Enable 2 factor authentication or multi factor authentication (MFA). Let me give you an example. When you want to log in to your email account, it allows you not only to authenticate your identity via a password but continues to verify your identity via a text message on your phone or on your backup email. Some applications you can use for MFA are Authy, Google Authenticator, etc.Avoid using a public wifi network. Yes, it is very tempting to use free public wifi and get your work done but the problem is these networks can be very insecure. You would be sharing the wifi network with unknown people. The unknown devices surrounding you might be infected with malware which they could pass onto your device. At the very least, use a VPN (Virtual private network). Not only does it provide you a secure tunneled channel to communicate but also can mask your identity and location.Use and enable an antivirus/anti-malware software on your device. This is a no brainer and acts as an insurance against cyber attacks and hackers.Always have backups and restoration of data enabled. If your system ever crashes or is affected with malware, it ensures that you have a copy of the data handy. For MacOs you can use Time Machine which is an inbuilt data backup software.The one important thing to note here is that continuously educating yourself will more likely cut down your chances of encountering cyberattacks and malware. If you see something that looks weird or off, question it! Do not accept anything at face value. My last tip would be to focus on security rather than convenience. They are inversely proportional. Focus on convenience and decrease security, focus on security and decrease convenience.
+
+Your *device* — whether a *phone*, *laptop*, or *tablet* — may store *sensitive information* such as *bank details*, *messages*, *family pictures*, or *work data*. If *compromised*, this information can be *stolen*, *destroyed*, or *used maliciously*, posing significant *risks*. A **cyber attack** can lead to *data breaches* with severe consequences. This guide outlines practical *strategies* to *protect devices* and *systems* from *cyber threats*, ensuring *security* and *peace of mind*.
+
+## Importance of Device Security
+
+*Sensitive information* on *personal devices* is a prime target for *cybercriminals*. A *breach* can result in:
+
+- *Identity theft* through stolen *bank details* or *personal data*.
+- *Loss of irreplaceable data* like *family pictures*.
+- *Compromised work data*, affecting *professional integrity*.
+- *Malicious use* of *messages* or *private information*.
+
+> **Key Risk**: Unprotected *devices* expose *sensitive data* to *cyber attacks*, threatening *personal* and *professional security*.
+
+## Strategies to Protect Devices
+
+The table below summarizes key *strategies* to safeguard *devices* against *cyber attacks* and their *benefits*:
+
+| **Strategy**                             | **Benefits**                                                                                                                                           |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Update Software and Patches              | Install *updates* and *patches* from *authorized vendors* to address *security vulnerabilities*, serving as a *first line of defense*.                 |
+| Enable Strong Passwords                  | Use *passwords* with *10-12+ characters*, including *upper/lowercase*, *numbers*, and *special characters*, to prevent *unauthorized access*.          |
+| Enable Multi-Factor Authentication (MFA) | Require *additional verification* (e.g., *text message*, *backup email*) via tools like *Authy* or *Google Authenticator* to enhance *login security*. |
+| Avoid Public Wi-Fi                       | Prevent *malware* from *insecure networks* by using a *VPN* for *secure communication* and *identity/location masking*.                                |
+| Use Antivirus/Anti-Malware Software      | Deploy *antivirus software* to detect and block *cyber threats*, acting as *insurance* against *hackers*.                                              |
+| Enable Data Backups and Restoration      | Use tools like *Time Machine* (MacOS) to maintain *data backups*, ensuring *recovery* from *crashes* or *malware*.                                     |
+
+### Detailed Protection Methods
+
+1. **Update Software and Patches**:
+    - Regularly install *software updates* and *patches* provided by *authorized vendors*.
+    - *Patches* include *security updates* that fix *vulnerabilities*, reducing *attack risks*.
+    - Myth: *Patches* may *break systems*. Reality: *Breakage* is rare, and *benefits* outweigh *risks*.
+
+2. **Enable Strong Passwords**:
+    - Use *passwords* longer than *10-12 characters* with a mix of *uppercase*, *lowercase*, *numbers*, and *special characters*.
+    - Avoid *reusing passwords* across *accounts* to limit *breach impact*.
+    - While managing *multiple passwords* is challenging, it’s a *critical practice* to prevent *data breaches*.
+
+3. **Enable Multi-Factor Authentication (MFA)**:
+    - *MFA* adds *extra verification* steps (e.g., *text message* to your *phone* or *backup email*).
+    - Tools like *Authy* or *Google Authenticator* enhance *login security*.
+    - Example: Logging into an *email account* requires a *password* and a *code* sent to your *device*.
+
+4. **Avoid Public Wi-Fi**:
+    - *Public Wi-Fi* is *insecure*, exposing *devices* to *malware* from *unknown users*.
+    - Use a *Virtual Private Network (VPN)* to create a *secure, tunneled connection* and *mask identity/location*.
+    - If *public Wi-Fi* is unavoidable, a *VPN* is a *minimum safeguard*.
+
+5. **Use Antivirus/Anti-Malware Software**:
+    - Install *antivirus* or *anti-malware software* to detect and *neutralize threats*.
+    - Acts as an *insurance policy* against *hackers* and *malicious software*.
+    - Regular *updates* ensure *protection* against *evolving threats*.
+
+6. **Enable Data Backups and Restoration**:
+    - Maintain *regular backups* to protect *data* from *crashes* or *malware*.
+    - Tools like *Time Machine* (MacOS) provide *inbuilt backup solutions*.
+    - *Restoration* ensures *data recovery* without *significant loss*.
+
+> **Key Strategies**: Implementing *layered defenses* significantly reduces *cyber attack risks*.
+
+## Continuous Education and Security Mindset
+
+*Continuous education* is critical to minimizing *cyber attack* risks:
+
+- **Stay Informed**: Learn about *emerging threats* like *phishing*, *malware*, or *social engineering*.
+- **Question Suspicious Activity**: If something seems *weird* or *off* (e.g., unusual emails, links), *investigate* before acting.
+- **Prioritize Security Over Convenience**:
+    - *Security* and *convenience* are *inversely proportional*.
+    - Choosing *convenience* (e.g., weak passwords, public Wi-Fi) reduces *security*.
+    - Prioritizing *security* (e.g., MFA, VPNs) may reduce *convenience* but protects *data*.
+
+> **Key Mindset**: A *proactive, security-focused approach* prevents *cyber threats* from exploiting *vulnerabilities*.
+
+## Conclusion
+
+Protecting *devices* from **cyber attacks** is essential to safeguard *sensitive information* like *bank details*, *messages*, and *work data*. By implementing *software updates*, *strong passwords*, *MFA*, *VPNs* for *public Wi-Fi*, *antivirus software*, and *data backups*, users can create *robust defenses*. *Continuous education* and a *security-first mindset* further reduce *risks* by fostering *vigilance*. While *convenience* is tempting, prioritizing *security* ensures *data integrity* and *user trust*, preventing *malicious exploitation*.
+
+> **Final Takeaway**: A *layered security strategy* empowers users to *protect devices* and *secure sensitive data* against *cyber threats*.

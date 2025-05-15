@@ -2,4 +2,141 @@
 title: How I passed my Comptia CySa+?
 date: Tue, 30 Aug 2022 16:15:00 +0000
 ---
-CompTIA CySA+ exam helps validate the skills necessary to join the rapidly expanding field of cybersecurity professionals. Here's my advice on how to study for the new CompTIA CySA+ (CS0-002) exam.An Overview of the Cysa+ exam: CompTIA CySA+ certification involves both hands-on, performance-based questions and multiple-choice questions. It focuses on the ability to capture, monitor proactively, and respond to network traffic findings. It also stresses software and application security, automation, threat hunting, and IT regulatory compliance and affects daily.  Knowledge and skills required to prepare and pass the Cysa+:Leverage intelligence and threat detection techniquesAnalyze and interpret dataIdentify and address vulnerabilitiesSuggest preventative measuresEffectively respond to and recover from incidentsEssential skills one will gain in the following areas: Threat and Vulnerability Management: Ability to utilize and apply proactive threat intelligence to support organizational security.Perform vulnerability management activities.Software and Systems Security: You are applying security solutions for infrastructure management.Demonstrating software & hardware assurance best practices.Compliance and Assessment:  Use security concepts to support organizational risk mitigation.Comprehend the significance of frameworks, policies, procedures, and controls.Security Operations and Monitoring: Analyze data as part of constant security monitoring activities.Enforce configuration changes to existing controls to improve security.Incident Response:Apply the proper incident response procedure.Analyze potential indicators of compromise.Utilize primary digital forensics techniques.My Preparation for the examMy Preparation involved a total of 4months. Month 1: Passive Reading [Getting familiar with specific terms & concepts]Month 2: Active Reading [Immersing myself in the modules]Primary focus on Incident Response, Security Monitoring & Operations, Digital forensics, Technical Hardware AssuranceMonth 3: Procrastination & Passive Reading [Falling ill during Month3 and other responsibilities slowed my progress, but I still got to some passive reading, (listening to video training on your phone)] Month 4: Went All-In [Made a Schedule to study every day and give practice tests] I am a nocturnal being, all my studying & activities happen during the night. I like to avoid the noise and bustle.Focus on Spaced Repetition & Active Recall.Choosing the study materialYes, there is lots of great material out there and not-so-great material out there. The material I chose wasJason Dion's Udemy course [Video training]This course also does provide a great study guide.Jason Dion Practice tests [6 practice tests]CompTIA CertMasterCompTIA self-paced labsMike Chapple Practice TestsJason Dion's video course is well thought out, written, and recorded. What I liked most about this course is that it gives you short snippets with exam tips. I did not choose multiple video courses as it can sometimes get very jarring. The main area that I focused on was Practice tests. I think you should focus on these very hard because these areas will test your memory and ability to find the right solution in a pool of similar-looking correct answers. I started initially with Jason Dion's practice test. They are good but can get very ambiguous.I ended up liking the CertMaster Practice tests. They provide a great explanation as to why you choose one answer over the rest. I also like CertMaster as I found it the most closely aligned with the exam. It also includes Performance-based questions, and solving these will help you with time management and effectively increase your speed during the exam.Comptia's self-paced labs are a great resource. It will help you a lot through PBQs.I primarily focused on networking, incidence response, email monitoring, and digital forensics labs.Mike Chapple's practice tests were just an add-on to see the variety of questions.A common myth with these practice questions is that you should be scoring a continuous 85%+ to pass this exam. I highly disregard this myth. I suggest you clear your fundamental concepts very well. This exam is structured to confuse the person appearing for it. Specific keywords will be twisted, and if you are unclear about the underlying concept, you will mark the wrong answer.Quick Example: the difference between Malware and Polymorphic Malware. If you do not understand what malware does and there's no option stating only malware, chances are you will end up marking the wrong answer because you did not see the option you were familiar with.Another example: hex codes for decoding URLsWith that said I suggest you to aim high on the exam. You need a 750 to pass but aim for an above 800 minimum. If you aim at just passing the exam, you will subconsciously train your mind to attempt the at-least rather than at-most and end up not succeeding. Super Helpful Tip: Make your own Notes. Your notes should cover the core concepts and help you in a way you understand. I use Notion for pretty much everything, feel free to use what makes you comfortable. I also used hand written notes. I gave close to 10-12 practice tests in the final two weeks. There was a point where my score was just stagnant. I couldn't crack 80% for a while and finally realized that PBQs are a significant part of the exam. So do not stress about breaking a particular percentage barrier. Final PointsI gave the Cysa+ exam as it was very relevant to what I am doing daily. This exam core focuses on risk mitigation and defense in depth. I understand why this exam can be challenging as it requires an advanced level of understanding of multiple domains and facets of security which involves a lot of practical knowledge. In simple terms, you won't be able to tie a complex rope knot just by reading about it, you would have to get your hands dirty. The exam covers a broad scope and will expose you to new terms. Know your strengths and focus on the weaknesses and grind through them. Overall, great exam, and one should attempt it. If you need any advice, suggestions, or knowledge about a topic, please feel free to reach out.
+
+The **CompTIA Cybersecurity Analyst (CySA+) (CS0-002)** certification validates *essential skills* for *cybersecurity professionals*, focusing on *threat detection*, *incident response*, and *compliance*. This post shares my *experience* and *strategies* for preparing for the *CS0-002 exam*, covering *key domains*, *study materials*, and *practical tips* to help you succeed. Note that *CS0-002* was retired in June 2024, replaced by *CS0-003*, but the preparation strategies remain broadly applicable for the updated exam.
+
+## Overview of the CySA+ Exam
+
+The *CompTIA CySA+ (CS0-002)* exam tests your ability to *proactively monitor*, *analyze*, and *respond* to *security threats* in a *network environment*. It includes:
+
+- **Question Types**: *Multiple-choice* and *performance-based questions (PBQs)*, requiring *hands-on problem-solving*.
+- **Focus Areas**: *Threat hunting*, *software security*, *automation*, *IT regulatory compliance*, and *daily security operations*.
+- **Exam Details**: Up to *85 questions*, *165 minutes*, with a *passing score* of *750/900* .
+
+The exam emphasizes *practical skills* in capturing and analyzing *network traffic*, securing *applications*, and responding to *incidents*.
+
+> **Key Objective**: *CySA+* validates your ability to *defend* and *mitigate risks* in a *dynamic cybersecurity landscape*.
+
+## Essential Skills and Knowledge Areas
+
+To pass the *CySA+ exam*, focus on these *key domains* and their associated *skills*:
+
+- **Threat and Vulnerability Management**:
+    - Utilize *proactive threat intelligence* to enhance *organizational security*.
+    - Perform *vulnerability management* activities, such as *scanning* and *patching*.
+- **Software and Systems Security**:
+    - Apply *security solutions* for *infrastructure management*.
+    - Demonstrate *software* and *hardware assurance* best practices.
+- **Compliance and Assessment**:
+    - Use *security concepts* to support *organizational risk mitigation*.
+    - Understand *frameworks*, *policies*, *procedures*, and *controls* (e.g., *NIST*, *ISO*).
+- **Security Operations and Monitoring**:
+    - Analyze *data* for *continuous security monitoring*.
+    - Enforce *configuration changes* to improve *security controls*.
+- **Incident Response**:
+    - Apply *proper incident response procedures*.
+    - Analyze *indicators of compromise (IoCs)*.
+    - Utilize *basic digital forensics techniques*.
+
+> **Key Focus**: *Practical skills* in *threat detection* and *incident response* are critical for *exam success*.
+
+## My Preparation Approach
+
+My preparation for the *CS0-002 exam* spanned *4 months*, with a structured yet flexible approach:
+
+1. **Month 1: Passive Reading**:
+    - Focused on *familiarizing* with *terms* and *concepts* through light reading.
+2. **Month 2: Active Reading**:
+    - Immersed in *exam modules*, emphasizing *Incident Response*, *Security Operations and Monitoring*, *Digital Forensics*, and *Technical Hardware Assurance*.
+3. **Month 3: Procrastination and Passive Reading**:
+    - Faced setbacks due to *illness* and *other responsibilities*.
+    - Continued *passive learning* by listening to *video training* on my phone.
+4. **Month 4: All-In**:
+    - Created a *daily study schedule* with *spaced repetition* and *active recall*.
+    - Took *10–12 practice tests* in the final two weeks to simulate *exam conditions*.
+
+**Study Habits**:
+- As a *nocturnal learner*, I studied at *night* to avoid *distractions*.
+- Emphasized *spaced repetition* (reviewing material at intervals) and *active recall* (testing memory actively).
+
+> **Key Strategy**: A *consistent schedule* and *active recall* overcame *setbacks* and boosted *retention*.
+
+## Choosing Study Materials
+
+I carefully selected *study materials* to maximize *exam readiness*:
+
+- **Jason Dion’s Udemy Course**:
+    - Comprehensive *video training* with a *study guide* and *exam tips* in short snippets.
+    - Well-structured and focused, avoiding the overwhelm of multiple courses.
+- **Jason Dion Practice Tests**:
+    - Included *6 practice tests*, though some questions were *ambiguous*.
+- **CompTIA CertMaster**:
+    - Offered *practice tests* with *detailed explanations* for answer choices.
+    - Closely aligned with the *exam format*, including *performance-based questions (PBQs)*.
+- **CompTIA Self-Paced Labs**:
+    - Provided *hands-on practice* in *Networking*, *Incident Response*, *Email Monitoring*, and *Digital Forensics*.
+    - Essential for mastering *PBQs*.
+- **Mike Chapple Practice Tests**:
+    - Supplemental resource for *question variety*.
+
+**Focus on Practice Tests**:
+- Prioritized *practice tests* to test *memory* and *decision-making* under *exam-like conditions*.
+- *CertMaster* stood out for its *explanations* and *PBQ alignment*, aiding *time management*.
+
+> **Key Resource**: *CertMaster* and *self-paced labs* provide the *closest simulation* of the *CySA+ exam*.
+
+## Focused Areas
+
+I concentrated on *key technical areas* to build *confidence*:
+
+- *Incident Response*: Mastering *procedures* and *indicators of compromise*.
+- *Security Operations and Monitoring*: Analyzing *logs* and applying *configuration changes*.
+- *Digital Forensics*: Understanding *basic techniques* for *evidence collection*.
+- *Technical Hardware Assurance*: Ensuring *secure hardware configurations*.
+- *Performance-Based Questions (PBQs)*: Practicing *hands-on tasks* to improve *speed* and *accuracy*.
+
+**Myth Debunked**:
+- A common belief is that *85%+* on *practice tests* guarantees a *pass*. I disregarded this, focusing on *fundamental concepts* to avoid confusion from *twisted keywords* (e.g., *Malware* vs. *Polymorphic Malware*, *hex codes* for *URL decoding*).
+
+> **Key Tip**: Master *core concepts* to navigate *confusing questions* and *PBQs*.
+
+## Note-Taking Strategy
+
+My *note-taking approach* was tailored for *effective learning*:
+
+- **Notion Notes**:
+    - Covered *core concepts* in a *structured format* for easy review.
+    - Focused on *keywords* and *scenarios* likely to appear in the exam.
+- **Handwritten Notes**:
+    - Reinforced *understanding* through *manual writing*.
+- **Practice Test Insights**:
+    - Noted *explanations* from *CertMaster* to clarify *correct answers*.
+
+**Scoring Insight**:
+- My *practice test scores* plateaued below *80%* until I prioritized *PBQs*, which are a *significant portion* of the exam.
+- Aimed for *800+/900* (not just the *750* passing score) to build *confidence* and avoid a *minimalist mindset*.
+
+> **Key Method**: *Personalized notes* and *PBQ practice* are essential for *exam readiness*.
+
+## Study Resources Summary
+
+The following table summarizes the *study resources* used for *CS0-002 preparation*:
+
+| Resource                      | Description                                      |
+|-------------------------------|--------------------------------------------------|
+| *Jason Dion’s Udemy Course*   | *Video training* with *study guide* and *tips*.  |
+| *Jason Dion Practice Tests*   | *6 practice tests*, some *ambiguous questions*.  |
+| *CompTIA CertMaster*          | *Practice tests* with *explanations* and *PBQs*. |
+| *CompTIA Self-Paced Labs*     | *Hands-on labs* for *Networking*, *Forensics*.   |
+| *Mike Chapple Practice Tests* | Supplemental *question variety*.                 |
+
+## Final Tips for Exam Success
+
+To excel in the *CompTIA CySA+ exam*, keep these *takeaways* in mind:
+
+- **Understand Core Concepts**:
+    - Master *fundamentals* to handle *twisted keywords* and *confusing options* (e.g., *Malware* vs. *Polymorphic Malware*).
+- **Prioritize PBQs**:
+    - Practice *performance-based questions* to improve *speed* and *time management*.
+- **Use Quality Resources**:
+    - Leverage *CertMaster*, *self

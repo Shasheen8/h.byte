@@ -2,4 +2,102 @@
 title: How to create and scope out an Incident Response Plan?
 date: Wed, 23 Nov 2022 17:33:00 +0000
 ---
-An incident is an occurrence or act of violating/potentially jeopardizing without legal authority the confidentiality, integrity, and availability of an explicit or implied security policy. An incident response plan is a collection of instructions or procedures to detect, respond, and restrict the effects of a malicious cyber attack against an organization's information systems.An incidence response lifecycle includes 5 phases:Phase 1 → Preparation: It is essential to make systems resilient to attack by hardening systems, writing policies & procedures, and setting up confidential lines of communication. Preparing for Incidence Response involves documenting processes & putting resources as well as guidelines in place and conducting training.Phase 2 → Detection & Analysis: Determine an incident has a residence, triage it & notify relevant stakeholders.Phase 3 → Containment: Limit the scope & magnitude of the incident by securing the data & limiting the impact on business operations and customers.Phase 4 → Eradication & Recovery: Eradicate the cause of the incident and get the system back to a secure [baseline] state.Phase 5 → Post-Incident Activity (Lessons Learned): Analyze the incident & responses to identify how the organization could improve the procedures or systems. What should an incident response report entail?  Incident formRecords of details about reporting & assign casesDate, Time, and Location of the incidentReporter & incident handler/namesHow the incident was detectedType of incidentExfiltrationInsider ThreatTheftAccidental breachCIA breach [Corruption/Destruction of Data]Scope of IncidentIncident Description & Event LoggingAn incident involves the breach of private and confidential data. It is important to prioritize an incident based on data criticality. Private/confidential data can be categorized by: Personally Identifiable Information (PII): Data used to identify, contact or impersonate an individual.Sensitive Personal Information (SPI): Data on an individual's opinions, beliefs & nature that has protected status by privacy legislation. The GDPR definition of SPI includes religious beliefs, political opinions, trade union memberships, gender, sexual orientation, racial or ethnic origin, genetic data & health information.Personal Health Information (PHI): Data that identifies an individual's medical records, insurance records, hospital records, and laboratory test results.Financial Information: Data stored in bank accounts, investment accounts, payroll, tax returns, credit card data, etc. (PCI-DSS) defines the safe handling & storage of payment card data.Intellectual Property: Data created by an organization, the products/services it produces or provides. (Copyrights, Patents, Trademarks, Trade Secret)Corporate Information: Confidential data owned by a company like the product, sales, marketing, legal & contact info. Corporate info about profit, cash flow, salaries, market shares & critical customers, or company competitors.High-Value Assets: Systems that process data critical to a mission-essential function. Maintaining the CIA as a high asset is vital to the organization's success.Primary & responsible stakeholders should be notified in case of a data breach as legislation or regulation requires. GDPR requires users to be notified within 72 hrs on the eve of a violation/breach of data. Who are the concerned stakeholders?Senior Leadership: Executives and ManagersRegulatory bodies: Governmental Organizations that oversee complianceLegal: The business & organization's legal counsel is responsible for mitigating Civil lawsuitsLaw Enforcement: for prepping legal action against attackers in the futureHuman Resources (HR): Ensuring employee contractsPublic Relations (PR): Manage negative publicityTraining and testing are significant parts of an incident response plan. All employees and staff should focus on continuous education and be trained to understand the processes, procedures, and priorities. It is vital to conduct test simulations & practical exercises in complex incident events and table-top activities. The IR plan should prioritize building relationships between the incident responders, executive teams, and end users.
+
+An **incident** is an unauthorized act that violates the *confidentiality*, *integrity*, or *availability* (CIA) of an organization's *security policy*, potentially compromising *information systems*. An *incident response plan* provides *procedures* to *detect*, *respond*, and *mitigate* the effects of *malicious cyberattacks*. This guide outlines the *incident response lifecycle*, details the *components* of an *incident response report*, and highlights *data classification* and *stakeholder roles* to ensure effective *cybersecurity management*.
+
+## Incident Response Lifecycle
+
+The *incident response lifecycle* consists of five phases to manage and recover from *cybersecurity incidents*:
+
+1. **Preparation**:
+    - Harden *systems* to resist *attacks*.
+    - Document *policies* and *procedures*.
+    - Establish *confidential communication channels*.
+    - Conduct *training* and prepare *resources* for *incident response*.
+2. **Detection and Analysis**:
+    - Identify that an *incident* has occurred.
+    - Triage the *incident* and notify *relevant stakeholders*.
+3. **Containment**:
+    - Limit the *scope* and *impact* of the *incident*.
+    - Secure *data* and minimize disruption to *business operations* and *customers*.
+4. **Eradication and Recovery**:
+    - Eliminate the *cause* of the *incident*.
+    - Restore *systems* to a *secure baseline state*.
+5. **Post-Incident Activity (Lessons Learned)**:
+    - Analyze the *incident* and *response efforts*.
+    - Identify *improvements* for *procedures* or *systems*.
+
+> **Key Process**: The *lifecycle* ensures a *structured approach* to *mitigating* and *learning* from *cybersecurity incidents*.
+
+## Incident Response Report Components
+
+An *incident response report* documents critical details to track and manage *incidents*. It should include:
+
+- **Incident Form**:
+    - Records for *reporting* and *assigning cases*.
+- **Details**:
+    - *Date*, *time*, and *location* of the *incident*.
+    - Names of the *reporter* and *incident handler(s)*.
+    - How the *incident* was *detected*.
+- **Type of Incident**:
+    - *Exfiltration*: Unauthorized *data extraction*.
+    - *Insider Threat*: Malicious actions by *internal actors*.
+    - *Theft*: Physical or digital *asset theft*.
+    - *Accidental Breach*: Unintentional *data exposure*.
+    - *CIA Breach*: *Corruption* or *destruction* of *data*.
+- **Scope of Incident**:
+    - Extent of *affected systems* or *data*.
+- **Incident Description and Event Logging**:
+    - Detailed *narrative* of the *incident* and *timeline* of events*.
+
+> **Key Report**: A *detailed report* ensures *transparency* and *accountability* in *incident management*.
+
+## Data Classification and Prioritization
+
+*Incidents* often involve breaches of *private* or *confidential data*. Prioritizing *incidents* based on *data criticality* is essential. The table below summarizes key *data types* and their *descriptions*:
+
+| **Data Type**                             | **Description**                                                                                                                                                       |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Personally Identifiable Information (PII) | Data to *identify*, *contact*, or *impersonate* an individual (e.g., name, Social Security number).                                                                   |
+| Sensitive Personal Information (SPI)      | *GDPR-protected* data on *religious beliefs*, *political opinions*, *gender*, *sexual orientation*, *racial/ethnic origins*, *genetic data*, or *health information*. |
+| Personal Health Information (PHI)         | *Medical records*, *insurance records*, *hospital records*, or *lab results*.                                                                                         |
+| Financial Information                     | *Bank accounts*, *investment accounts*, *payroll*, *tax returns*, or *credit card data* (governed by *PCI-DSS*).                                                      |
+| Intellectual Property                     | Organization-created data like *copyrights*, *patents*, *trademarks*, or *trade secrets*.                                                                             |
+| Corporate Information                     | *Confidential* data on *products*, *sales*, *marketing*, *legal*, or *customer/competitor details*.                                                                   |
+| High-Value Assets                         | *Systems* critical to *mission-essential functions*, requiring strict *CIA protection*.                                                                               |
+
+> **Key Prioritization**: *Critical data* breaches demand *immediate action* to *limit damage*.
+
+## Stakeholder Notification
+
+In case of a *data breach*, *primary stakeholders* must be notified, especially when required by *legislation* (e.g., *GDPR* mandates *user notification* within *72 hours*). The table below lists *key stakeholders* and their *roles*:
+
+| **Stakeholder**       | **Role**                                                       |
+|-----------------------|----------------------------------------------------------------|
+| Senior Leadership     | *Executives* and *managers* overseeing *response strategies*.  |
+| Regulatory Bodies     | *Government organizations* ensuring *compliance*.              |
+| Legal Counsel         | *Mitigates civil lawsuits* and *advises on legal obligations*. |
+| Law Enforcement       | Prepares for *legal action* against *attackers*.               |
+| Human Resources (HR)  | Manages *employee contracts* and *compliance*.                 |
+| Public Relations (PR) | Handles *negative publicity* to protect *reputation*.          |
+
+> **Key Notification**: *Timely stakeholder communication* ensures *compliance* and *damage control*.
+
+## Training and Testing
+
+*Training* and *testing* are critical for an effective *incident response plan*:
+
+1. **Continuous Education**:
+    - Train *all employees* on *processes*, *procedures*, and *priorities*.
+2. **Practical Exercises**:
+    - Conduct *test simulations* and *tabletop activities* for *complex incident scenarios*.
+3. **Relationship Building**:
+    - Foster collaboration between *incident responders*, *executive teams*, and *end users*.
+
+> **Key Practice**: *Regular training* and *simulations* strengthen *incident response readiness*.
+
+## Conclusion
+
+An *incident response plan* is vital for *detecting*, *responding*, and *mitigating* *cybersecurity incidents* that threaten an organization’s *confidentiality*, *integrity*, and *availability*. The *five-phase lifecycle*—*Preparation*, *Detection and Analysis*, *Containment*, *Eradication and Recovery*, and *Post-Incident Activity*—provides a *structured approach*. A detailed *incident response report*, *prioritized data classification*, *stakeholder notification*, and *ongoing training* ensure *effective incident management*. By implementing and *regularly testing* the *plan*, organizations can *minimize damage*, *enhance resilience*, and maintain *trust*.
+
+> **Final Takeaway**: A *robust incident response plan* empowers organizations to *combat cyberthreats* and *safeguard critical assets*.

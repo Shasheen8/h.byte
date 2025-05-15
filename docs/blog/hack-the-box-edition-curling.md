@@ -2,4 +2,100 @@
 title: Hack The Box Edition: Curling
 date: Wed, 01 Sep 2021 05:00:00 +0000
 ---
-Hack The Box: Curling   Exploiting a vulnerable linux machine at target IP 10.10.10.150 known as Curling.Strategy: Compromise the vulnerable machine in order to gain privileged access for the root. Tactics:Perform a network scan. Using nmap to discover target Ip 10.10.10.150. Scanning it for all the vulnerable ports with Nikto and checking all the accessible directories with dirb. Nmap scan revealed that port 22 has a SSH service and  port 80 has an Apache server running and has a joomla service running on it. The target Ip has a cewl curling website running on it. Viewed the source page and found a secrets.txt and a username “Floris”. The secrets.txt file contained a hashed base64 text. Decoded that and it gave me a password “Curling2018!” which I used for user “floris”.To confirm the password for user “Floris” used burp suite to intercept a random login request. And used the cluster bomb intruder attack in burp suite for the username payload and the password payload. For this I needed a wordlist so used cewl to get a word list out of all the words on the cewl curling website blog. And got access to the system as user “Floris”. Got access to the control panel. Apparently I tried to upload a reverse php shell but for some reason was unsuccessful. So I got access to the media directory and used a php upload script so that I could upload a reverse tcp shell script to get access to the shell which worked. Also this website used the protostar theme, so linked the script with that theme directory. After successfully uploading the script, I got reverse shell using netcat.I was currently logged in as “www-data” in the shell. Hovering inside the machine I found that user “floris” has a password_backup file present. The contents of the file are a hex dump. Copied the content and used cyberchef to decode the file. After decoding I got a password.txt file with a password for floris” and I then logged into the machine using ssh as floris. Exfiltrated to the user.txt file and infiltrated the admin area directory which contains an input and report file.The report contained the source of the main page website. To perform privilege escalation copied the reverse shell script to the apache web server and started it on the web machine. The vulnerable machine ran a cron job which kept refreshing the page. This basically gave me a reverse shell and got the root.txt file.Final Thoughts: This is great HTB machine. Did some reverse engineering, struggled a bit with escalating privileges and uploading a php script but overall had fun with this one, would rate it at a medium level difficulty CTF challenge.
+
+The **Curling** challenge on *Hack The Box* involves compromising a vulnerable *Linux machine* at IP *10.10.10.150* to gain *privileged access* as the *root* user. This post details the strategy, tactics, and step-by-step process used to achieve this goal, culminating in a fun and engaging *capture-the-flag (CTF)* experience.
+
+## Strategy
+
+The primary objective is to *compromise* the target machine and escalate privileges to obtain *root* access.
+
+> **Key Goal**: Gain unauthorized access to the system and retrieve the *root.txt* flag.
+
+## Tactics
+
+The approach involves a combination of *network reconnaissance*, *web exploitation*, *credential discovery*, and *privilege escalation*:
+
+- Perform a *network scan* to identify open ports and services.
+- Use tools like *nmap*, *Nikto*, and *dirb* to discover vulnerabilities.
+- Exploit a *Joomla* service running on an *Apache* server.
+- Leverage *credential discovery* and *password cracking* to gain initial access.
+- Upload a *reverse shell* to establish a foothold.
+- Escalate privileges by exploiting a *cron job* and *file misconfigurations*.
+
+> **Key Insight**: Systematic enumeration and creative exploitation are critical for CTF success.
+
+## Exploitation Process
+
+The following steps outline the process to compromise the *Curling* machine:
+
+1. **Network Reconnaissance**:
+    - Used *nmap* to scan the target IP *10.10.10.150* for open ports and services.
+    - **Findings**:
+        - *Port 22*: Running an *SSH* service.
+        - *Port 80*: Hosting an *Apache* server with a *Joomla* service.
+    - Ran *Nikto* to scan for vulnerabilities in the web server.
+    - Used *dirb* to enumerate accessible directories on the *Joomla* site.
+
+2. **Web Enumeration**:
+    - Discovered a *Cewl Curling* website running on the target.
+    - Viewed the *source page* and found a file named *secrets.txt* and a username *Floris*.
+    - The *secrets.txt* file contained a *hashed base64 text*.
+
+3. **Credential Discovery**:
+    - Decoded the *base64 text* from *secrets.txt*, revealing the password *Curling2018!* for user *Floris*.
+    - Used *Burp Suite* to intercept a random *login request* to the *Joomla* site.
+    - Performed a *Cluster Bomb Intruder attack* in *Burp Suite*:
+        - **Username Payload**: Set to *Floris*.
+        - **Password Payload**: Used a wordlist generated by *Cewl* from the *Cewl Curling* website blog.
+    - Confirmed the password *Curling2018!* granted access to the *Joomla* control panel as *Floris*.
+
+4. **Initial Access**:
+    - Attempted to upload a *reverse PHP shell* via the control panel but was *unsuccessful*.
+    - Accessed the *media directory* and used a *PHP upload script* to upload a *reverse TCP shell script*.
+    - Linked the script to the *Protostar* theme directory used by the website.
+    - Successfully uploaded the script and established a *reverse shell* using *netcat*.
+    - Logged into the shell as the *www-data* user.
+    > **Key Challenge**: Uploading the reverse shell required creative use of the media directory due to initial failures.
+
+5. **Internal Enumeration**:
+    - While exploring the machine as *www-data*, discovered a file named *password_backup* in the *Floris* user’s directory.
+    - The file contained a *hex dump*:
+        ```plaintext
+        [Hex dump contents, not provided in original input]
+        ```
+    - Decoded the *hex dump* using *CyberChef*, which revealed a *password.txt* file containing a password for the user *Floris*.
+
+6. **User Access**:
+    - Used the decoded password to log in to the machine via *SSH* as *Floris*.
+    - Retrieved the *user.txt* flag from the home directory.
+    - Investigated the *admin area* directory, which contained *input* and *report* files.
+    - Examined the *report* file to find the *source code* of the main website page.
+
+7. **Privilege Escalation**:
+    - Uploaded the *reverse shell script* to the *Apache* web server and executed it on the machine.
+    - Identified a *cron job* that periodically refreshed the website page.
+    - Leveraged the *cron job* to execute the *reverse shell script*, successfully obtaining a *root* shell.
+    - Retrieved the *root.txt* flag from the root directory.
+
+
+> **Key Insight**: The cron job provided a critical escalation path by executing the malicious script.
+
+## Tools Used
+
+The following table summarizes the tools employed during the exploitation:
+
+| Tool         | Purpose                                                   |
+|--------------|-----------------------------------------------------------|
+| *nmap*       | Network scanning for open ports and services              |
+| *Nikto*      | Web server vulnerability scanning                         |
+| *dirb*       | Directory enumeration on the web server                   |
+| *Cewl*       | Generating wordlists from the website                     |
+| *Burp Suite* | Intercepting login requests and brute-forcing credentials |
+| *CyberChef*  | Decoding hex dump to retrieve password                    |
+| *netcat*     | Establishing reverse shell connection                     |
+
+## Final Thoughts
+
+The **Curling** machine on *Hack The Box* is a *fantastic* medium-difficulty *CTF challenge*. It required a blend of *reverse engineering*, *web exploitation*, and *privilege escalation*. While uploading the *PHP script* and escalating privileges posed some challenges, the process was *engaging* and *rewarding*. This challenge highlights the importance of thorough *enumeration* and creative problem-solving in penetration testing.
+
+> **Final Rating**: Medium difficulty, highly recommended for CTF enthusiasts!
