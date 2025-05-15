@@ -1,0 +1,96 @@
+---
+title: Choosing the Right Load Balancer for Your AWS Application between CLB, ALB, and NLB
+date: Wed, 22 Feb 2023 17:32:00 +0000
+---
+
+Load balancing distributes incoming network traffic across multiple servers to optimize resource utilization, improve application availability, and increase fault tolerance. Amazon Web Services (AWS) provides three types of load balancers: Classic Load Balancer (CLB), Application Load Balancer (ALB), and Network Load Balancer (NLB).
+
+## Classic Load Balancer (CLB)
+
+The Classic Load Balancer is the first-generation load balancer offered by AWS. A Layer 4 (TCP/UDP) load balancer can route traffic to multiple backend servers in different availability zones. The CLB provides basic load-balancing features such as SSL termination, session affinity, health checks, and automatic scaling. It is ideal for simple web applications that require load balancing at the transport layer.
+
+### Benefits
+
+-   Easy to set up and use, with a simple configuration process.
+-   Supports multiple protocols, including HTTP, HTTPS, TCP, and SSL.
+-   Provides primary health checks to ensure that the backend servers are available.
+-   Offers sticky sessions to maintain session affinity between clients and backend servers.
+-   Can distribute traffic across multiple availability zones for improved fault tolerance.
+
+### Use Cases
+
+-   Simple web applications that require load balancing at the transport layer.
+-   Applications that use protocols other than HTTP or HTTPS.
+-   Legacy applications that cannot be easily modified to work with newer load balancers.
+
+### Limitations
+
+-   **Limited Routing Capabilities**: CLB provides limited routing capabilities compared to ALB and NLB. It cannot route traffic based on URL or domain name, which makes it less suitable for modern microservices-based architectures.
+-   **Limited Protocol Support**: CLB supports only TCP and SSL protocols, which may not be suitable for applications with specific protocol requirements.
+-   **Limited Security Features**: CLB provides basic security features such as SSL/TLS termination, but it does not support advanced security features such as Web Application Firewall (WAF) or certificate management. This makes it less suitable for applications with high-security requirements.
+-   **Limited Scalability**: CLB has limitations on the number of connections it can handle and the amount of traffic it can route, which can limit its scalability. This makes it less suitable for high-traffic applications.
+-   **Limited Availability Zones**: CLB supports only a single availability zone by default, which can limit its availability and reliability. To improve availability, you need to configure CLB to use multiple availability zones, which can increase complexity and cost.
+
+## Application Load Balancer (ALB)
+
+The Application Load Balancer is a Layer 7 (HTTP/HTTPS) load balancer that can route traffic to multiple backend servers based on application-level information. The ALB provides advanced load-balancing features such as content-based routing, path-based routing, host-based routing, and redirect rules. It also supports WebSocket and HTTP/2 traffic, making it ideal for modern web applications.
+
+### Benefits
+
+-   Provides advanced routing capabilities based on application-level information.
+-   Supports WebSocket and HTTP/2 traffic for modern web applications.
+-   Offers target group-level health checks to ensure that the backend servers are available.
+-   Provides flexible routing rules for content-based, path-based, and host-based routing.
+-   Supports redirection rules for HTTP-to-HTTPS, HTTP-to-HTTP, and HTTPS-to-HTTPS traffic.
+
+### Use Cases
+
+-   Modern web applications require advanced routing capabilities.
+-   Applications that require support for WebSocket and HTTP/2 traffic.
+-   Microservices-based applications that use container orchestration platforms like Kubernetes or Amazon Elastic Container Service (ECS).
+
+### Limitations
+
+-   **Limited IP Address Range**: ALB has a limited range of IP addresses, which means it cannot handle large-scale applications with high traffic volumes. This can limit its scalability and availability.
+-   **Limited TLS Options**: ALB supports a limited set of SSL/TLS ciphers and protocols, which may not be suitable for applications with specific security requirements.
+-   **Limited Protocol Support**: ALB supports only HTTP, HTTPS, and WebSocket protocols, which may not be suitable for applications with specific protocol requirements.
+-   **Limited Logging and Monitoring**: ALB provides basic logging and monitoring capabilities but does not offer detailed metrics or logs for troubleshooting purposes. This can make it difficult to diagnose issues and improve performance.
+-   **Limited Customization**: ALB provides limited customization options compared to CLB, which may not be suitable for applications with complex routing rules or advanced configurations.
+-   **Cost**: ALB can be more expensive than CLB, especially for applications with high traffic volumes or complex routing rules. This can make it less suitable for small-scale or cost-sensitive applications.
+
+## Network Load Balancer (NLB)
+
+The Network Load Balancer is a Layer 4 (TCP/UDP) load balancer that routes traffic to multiple backend servers based on IP protocol data. The NLB provides high throughput, low latency, and scalability for applications that require ultra-high performance, such as gaming, media streaming, or financial services.
+
+### Benefits
+
+-   It provides high throughput, low latency, and scalability for applications that require ultra-high performance.
+-   Supports static IP addresses for easy integration with existing infrastructure.
+-   Offers target group-level health checks to ensure that the backend servers are available.
+-   Provides support for TLS termination, preserving the client's IP address for better visibility and security.
+-   Supports source IP affinity, ensuring that each client is always routed to the same backend server.
+
+### Use Cases
+
+-   Applications that require ultra-high performance, such as gaming, media streaming, or financial services.
+-   Applications that require static IP addresses for easy integration with existing infrastructure.
+-   Applications that require source IP affinity for session persistence.
+
+### Limitations
+
+-   **Limited Protocol Support**: NLB supports only TCP, UDP, and TLS protocols, which may not be suitable for applications with specific protocol requirements.
+-   **Limited Routing Capabilities**: NLB provides limited routing capabilities compared to ALB, which may not be suitable for applications with complex routing rules.
+-   **Limited TLS Options**: NLB supports a limited set of SSL/TLS ciphers and protocols, which may not be suitable for applications with specific security requirements.
+-   **Limited Health Check Options**: NLB provides limited health check options compared to ALB, which may not be suitable for applications with complex health check requirements.
+-   **Limited Customization**: NLB provides limited customization options compared to CLB and ALB, which may not be suitable for applications with complex configurations or requirements.
+-   **Cost**: NLB can be more expensive than CLB, especially for applications with high traffic volumes or complex configurations. This can make it less suitable for small-scale or cost-sensitive applications.
+
+## Conclusion
+
+In conclusion, AWS provides three types of load balancers - Classic Load Balancer (CLB), Application Load Balancer (ALB), and Network Load Balancer (NLB) - each with its advantages and limitations. CLB is a legacy load balancer that is easy to set up and use but has limited routing, security, and scalability capabilities. It is suitable for small-scale applications that do not require advanced routing or security features. ALB is a layer 7 load balancer that provides advanced routing capabilities and security features such as Web Application Firewall (WAF) and certificate management. It is suitable for modern microservices-based architectures and applications with high-security requirements. NLB is a layer 4 load balancer that provides high performance and low latency for TCP, UDP, and TLS protocols. It is suitable for applications requiring high scalability and performance, such as gaming and media streaming. Each load-balancer type has limitations that users should consider when choosing a load-balancing solution for their applications. While ALB and NLB provide advanced features and capabilities, they can also be more expensive than CLB and require additional configuration and management. Ultimately, the choice of load balancer type will depend on the application's specific requirements, such as scalability, performance, security, and protocol support. Users may also need to combine multiple load balancers and other AWS services to provide a comprehensive solution for their applications.
+
+## Reference
+
+-   [https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html)
+-   [https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+-   [https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)

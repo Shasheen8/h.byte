@@ -1,4 +1,4 @@
-site_name: HealthyByte 
+site_name: HEALTHYBYTE 
 site_description: HealthyByte Playground
 site_author: Shasheen Bandodkar
 site_url: https://sitename.example
@@ -17,7 +17,6 @@ theme:
 
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
       primary: deep orange
       accent: indigo
       toggle:
@@ -36,12 +35,21 @@ theme:
   
   plugins:
     - search
+    - mermaid2
     - rss:
       length: 100
     - minify:
         minify_html: true
         minify_css: true
         minify_js: true
+  
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
 
 repo_name: h.byte
 repo_url: https://github.com/Shasheen8/h.byte
