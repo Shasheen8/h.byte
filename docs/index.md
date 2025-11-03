@@ -15,7 +15,7 @@ hide:
 <div>
     <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--md-primary-fg-color); margin-top: 0;">Welcome to HealthyByte</h1>
     <p style="font-size: 1.2rem; line-height: 1.8; color: var(--md-default-fg-color--light); margin-bottom: 0;">
-        Your comprehensive resource for enhancing digital security awareness. Through insightful articles, practical guides, and expert analysis, HealthyByte empowers readers to protect their digital lives.
+        Your comprehensive resource for enhancing digital security awareness. Through insightful blogs, practical guides, and expert analysis, HealthyByte empowers readers to protect their digital lives.
     </p>
 </div>
 
@@ -114,7 +114,7 @@ Whether you're **just starting your cybersecurity journey** or you're a **season
 
 <div style="text-align: center; margin: 4rem 0;">
     <a href="blog/" style="display: inline-block; background: var(--md-primary-fg-color); color: white; padding: 1rem 2.5rem; border-radius: 0.4rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3); transition: transform 0.2s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(255, 87, 34, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255, 87, 34, 0.3)'">
-        Browse All Articles
+        Browse All Blogs
     </a>
 </div>
 
