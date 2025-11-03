@@ -22,21 +22,21 @@ The exam emphasizes *practical skills* in capturing and analyzing *network traff
 To pass the *CySA+ exam*, focus on these *key domains* and their associated *skills*:
 
 - **Threat and Vulnerability Management**:
-    - Utilize *proactive threat intelligence* to enhance *organizational security*.
-    - Perform *vulnerability management* activities, such as *scanning* and *patching*.
+ - Utilize *proactive threat intelligence* to enhance *organizational security*.
+ - Perform *vulnerability management* activities, such as *scanning* and *patching*.
 - **Software and Systems Security**:
-    - Apply *security solutions* for *infrastructure management*.
-    - Demonstrate *software* and *hardware assurance* best practices.
+ - Apply *security solutions* for *infrastructure management*.
+ - Demonstrate *software* and *hardware assurance* best practices.
 - **Compliance and Assessment**:
-    - Use *security concepts* to support *organizational risk mitigation*.
-    - Understand *frameworks*, *policies*, *procedures*, and *controls* (e.g., *NIST*, *ISO*).
+ - Use *security concepts* to support *organizational risk mitigation*.
+ - Understand *frameworks*, *policies*, *procedures*, and *controls* (e.g., *NIST*, *ISO*).
 - **Security Operations and Monitoring**:
-    - Analyze *data* for *continuous security monitoring*.
-    - Enforce *configuration changes* to improve *security controls*.
+ - Analyze *data* for *continuous security monitoring*.
+ - Enforce *configuration changes* to improve *security controls*.
 - **Incident Response**:
-    - Apply *proper incident response procedures*.
-    - Analyze *indicators of compromise (IoCs)*.
-    - Utilize *basic digital forensics techniques*.
+ - Apply *proper incident response procedures*.
+ - Analyze *indicators of compromise (IoCs)*.
+ - Utilize *basic digital forensics techniques*.
 
 > **Key Focus**: *Practical skills* in *threat detection* and *incident response* are critical for *exam success*.
 
@@ -45,15 +45,15 @@ To pass the *CySA+ exam*, focus on these *key domains* and their associated *ski
 My preparation for the *CS0-002 exam* spanned *4 months*, with a structured yet flexible approach:
 
 1. **Month 1: Passive Reading**:
-    - Focused on *familiarizing* with *terms* and *concepts* through light reading.
+ - Focused on *familiarizing* with *terms* and *concepts* through light reading.
 2. **Month 2: Active Reading**:
-    - Immersed in *exam modules*, emphasizing *Incident Response*, *Security Operations and Monitoring*, *Digital Forensics*, and *Technical Hardware Assurance*.
+ - Immersed in *exam modules*, emphasizing *Incident Response*, *Security Operations and Monitoring*, *Digital Forensics*, and *Technical Hardware Assurance*.
 3. **Month 3: Procrastination and Passive Reading**:
-    - Faced setbacks due to *illness* and *other responsibilities*.
-    - Continued *passive learning* by listening to *video training* on my phone.
+ - Faced setbacks due to *illness* and *other responsibilities*.
+ - Continued *passive learning* by listening to *video training* on my phone.
 4. **Month 4: All-In**:
-    - Created a *daily study schedule* with *spaced repetition* and *active recall*.
-    - Took *10–12 practice tests* in the final two weeks to simulate *exam conditions*.
+ - Created a *daily study schedule* with *spaced repetition* and *active recall*.
+ - Took *10–12 practice tests* in the final two weeks to simulate *exam conditions*.
 
 **Study Habits**:
 - As a *nocturnal learner*, I studied at *night* to avoid *distractions*.
@@ -66,18 +66,18 @@ My preparation for the *CS0-002 exam* spanned *4 months*, with a structured yet 
 I carefully selected *study materials* to maximize *exam readiness*:
 
 - **Jason Dion’s Udemy Course**:
-    - Comprehensive *video training* with a *study guide* and *exam tips* in short snippets.
-    - Well-structured and focused, avoiding the overwhelm of multiple courses.
+ - Comprehensive *video training* with a *study guide* and *exam tips* in short snippets.
+ - Well-structured and focused, avoiding the overwhelm of multiple courses.
 - **Jason Dion Practice Tests**:
-    - Included *6 practice tests*, though some questions were *ambiguous*.
+ - Included *6 practice tests*, though some questions were *ambiguous*.
 - **CompTIA CertMaster**:
-    - Offered *practice tests* with *detailed explanations* for answer choices.
-    - Closely aligned with the *exam format*, including *performance-based questions (PBQs)*.
+ - Offered *practice tests* with *detailed explanations* for answer choices.
+ - Closely aligned with the *exam format*, including *performance-based questions (PBQs)*.
 - **CompTIA Self-Paced Labs**:
-    - Provided *hands-on practice* in *Networking*, *Incident Response*, *Email Monitoring*, and *Digital Forensics*.
-    - Essential for mastering *PBQs*.
+ - Provided *hands-on practice* in *Networking*, *Incident Response*, *Email Monitoring*, and *Digital Forensics*.
+ - Essential for mastering *PBQs*.
 - **Mike Chapple Practice Tests**:
-    - Supplemental resource for *question variety*.
+ - Supplemental resource for *question variety*.
 
 **Focus on Practice Tests**:
 - Prioritized *practice tests* to test *memory* and *decision-making* under *exam-like conditions*.
@@ -105,12 +105,12 @@ I concentrated on *key technical areas* to build *confidence*:
 My *note-taking approach* was tailored for *effective learning*:
 
 - **Notion Notes**:
-    - Covered *core concepts* in a *structured format* for easy review.
-    - Focused on *keywords* and *scenarios* likely to appear in the exam.
+ - Covered *core concepts* in a *structured format* for easy review.
+ - Focused on *keywords* and *scenarios* likely to appear in the exam.
 - **Handwritten Notes**:
-    - Reinforced *understanding* through *manual writing*.
+ - Reinforced *understanding* through *manual writing*.
 - **Practice Test Insights**:
-    - Noted *explanations* from *CertMaster* to clarify *correct answers*.
+ - Noted *explanations* from *CertMaster* to clarify *correct answers*.
 
 **Scoring Insight**:
 - My *practice test scores* plateaued below *80%* until I prioritized *PBQs*, which are a *significant portion* of the exam.
@@ -122,21 +122,21 @@ My *note-taking approach* was tailored for *effective learning*:
 
 The following table summarizes the *study resources* used for *CS0-002 preparation*:
 
-| Resource                      | Description                                      |
+| Resource | Description |
 |-------------------------------|--------------------------------------------------|
-| *Jason Dion’s Udemy Course*   | *Video training* with *study guide* and *tips*.  |
-| *Jason Dion Practice Tests*   | *6 practice tests*, some *ambiguous questions*.  |
-| *CompTIA CertMaster*          | *Practice tests* with *explanations* and *PBQs*. |
-| *CompTIA Self-Paced Labs*     | *Hands-on labs* for *Networking*, *Forensics*.   |
-| *Mike Chapple Practice Tests* | Supplemental *question variety*.                 |
+| *Jason Dion’s Udemy Course* | *Video training* with *study guide* and *tips*. |
+| *Jason Dion Practice Tests* | *6 practice tests*, some *ambiguous questions*. |
+| *CompTIA CertMaster* | *Practice tests* with *explanations* and *PBQs*. |
+| *CompTIA Self-Paced Labs* | *Hands-on labs* for *Networking*, *Forensics*. |
+| *Mike Chapple Practice Tests* | Supplemental *question variety*. |
 
 ## Final Tips for Exam Success
 
 To excel in the *CompTIA CySA+ exam*, keep these *takeaways* in mind:
 
 - **Understand Core Concepts**:
-    - Master *fundamentals* to handle *twisted keywords* and *confusing options* (e.g., *Malware* vs. *Polymorphic Malware*).
+ - Master *fundamentals* to handle *twisted keywords* and *confusing options* (e.g., *Malware* vs. *Polymorphic Malware*).
 - **Prioritize PBQs**:
-    - Practice *performance-based questions* to improve *speed* and *time management*.
+ - Practice *performance-based questions* to improve *speed* and *time management*.
 - **Use Quality Resources**:
-    - Leverage *CertMaster*, *self
+ - Leverage *CertMaster*, *self

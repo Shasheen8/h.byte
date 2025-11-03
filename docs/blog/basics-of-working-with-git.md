@@ -76,37 +76,37 @@ Git operates in three primary states:
 Follow these steps to set up a Git repository and push it to GitHub:
 
 1. **Create a new folder**:
-   ```
-   mkdir testing
-   ```
+ ```
+ mkdir testing
+ ```
 2. **Navigate to the folder**:
-   ```
-   cd testing
-   ```
+ ```
+ cd testing
+ ```
 3. **Create a new file**:
-   ```
-   touch test.py
-   ```
+ ```
+ touch test.py
+ ```
 4. **Check untracked changes**:
-   ```
-   git status
-   ```
+ ```
+ git status
+ ```
 5. **Add the file**:
-   ```
-   git add test.py
-   ```
+ ```
+ git add test.py
+ ```
 6. **Commit changes**:
-   ```
-   git commit -m "<add a comment for your commit >"
-   ```
+ ```
+ git commit -m "<add a comment for your commit >"
+ ```
 7. **Add a remote origin**:
-   ```
-   git remote add origin main https://github.com/shasheen/<directory>
-   ```
+ ```
+ git remote add origin main https://github.com/shasheen/<directory>
+ ```
 8. **Push to GitHub**:
-   ```
-   git push -u origin
-   ```
+ ```
+ git push -u origin
+ ```
 
 > **Key Consideration**: Replace `<directory>` with your actual GitHub repository path and ensure you’ve created or linked a repo on GitHub.
 

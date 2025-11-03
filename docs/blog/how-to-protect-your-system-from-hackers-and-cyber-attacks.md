@@ -20,46 +20,46 @@ Your *device* — whether a *phone*, *laptop*, or *tablet* — may store *sensit
 
 The table below summarizes key *strategies* to safeguard *devices* against *cyber attacks* and their *benefits*:
 
-| **Strategy**                             | **Benefits**                                                                                                                                           |
+| **Strategy** | **Benefits** |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Update Software and Patches              | Install *updates* and *patches* from *authorized vendors* to address *security vulnerabilities*, serving as a *first line of defense*.                 |
-| Enable Strong Passwords                  | Use *passwords* with *10-12+ characters*, including *upper/lowercase*, *numbers*, and *special characters*, to prevent *unauthorized access*.          |
+| Update Software and Patches | Install *updates* and *patches* from *authorized vendors* to address *security vulnerabilities*, serving as a *first line of defense*. |
+| Enable Strong Passwords | Use *passwords* with *10-12+ characters*, including *upper/lowercase*, *numbers*, and *special characters*, to prevent *unauthorized access*. |
 | Enable Multi-Factor Authentication (MFA) | Require *additional verification* (e.g., *text message*, *backup email*) via tools like *Authy* or *Google Authenticator* to enhance *login security*. |
-| Avoid Public Wi-Fi                       | Prevent *malware* from *insecure networks* by using a *VPN* for *secure communication* and *identity/location masking*.                                |
-| Use Antivirus/Anti-Malware Software      | Deploy *antivirus software* to detect and block *cyber threats*, acting as *insurance* against *hackers*.                                              |
-| Enable Data Backups and Restoration      | Use tools like *Time Machine* (MacOS) to maintain *data backups*, ensuring *recovery* from *crashes* or *malware*.                                     |
+| Avoid Public Wi-Fi | Prevent *malware* from *insecure networks* by using a *VPN* for *secure communication* and *identity/location masking*. |
+| Use Antivirus/Anti-Malware Software | Deploy *antivirus software* to detect and block *cyber threats*, acting as *insurance* against *hackers*. |
+| Enable Data Backups and Restoration | Use tools like *Time Machine* (MacOS) to maintain *data backups*, ensuring *recovery* from *crashes* or *malware*. |
 
 ### Detailed Protection Methods
 
 1. **Update Software and Patches**:
-    - Regularly install *software updates* and *patches* provided by *authorized vendors*.
-    - *Patches* include *security updates* that fix *vulnerabilities*, reducing *attack risks*.
-    - Myth: *Patches* may *break systems*. Reality: *Breakage* is rare, and *benefits* outweigh *risks*.
+ - Regularly install *software updates* and *patches* provided by *authorized vendors*.
+ - *Patches* include *security updates* that fix *vulnerabilities*, reducing *attack risks*.
+ - Myth: *Patches* may *break systems*. Reality: *Breakage* is rare, and *benefits* outweigh *risks*.
 
 2. **Enable Strong Passwords**:
-    - Use *passwords* longer than *10-12 characters* with a mix of *uppercase*, *lowercase*, *numbers*, and *special characters*.
-    - Avoid *reusing passwords* across *accounts* to limit *breach impact*.
-    - While managing *multiple passwords* is challenging, it’s a *critical practice* to prevent *data breaches*.
+ - Use *passwords* longer than *10-12 characters* with a mix of *uppercase*, *lowercase*, *numbers*, and *special characters*.
+ - Avoid *reusing passwords* across *accounts* to limit *breach impact*.
+ - While managing *multiple passwords* is challenging, it’s a *critical practice* to prevent *data breaches*.
 
 3. **Enable Multi-Factor Authentication (MFA)**:
-    - *MFA* adds *extra verification* steps (e.g., *text message* to your *phone* or *backup email*).
-    - Tools like *Authy* or *Google Authenticator* enhance *login security*.
-    - Example: Logging into an *email account* requires a *password* and a *code* sent to your *device*.
+ - *MFA* adds *extra verification* steps (e.g., *text message* to your *phone* or *backup email*).
+ - Tools like *Authy* or *Google Authenticator* enhance *login security*.
+ - Example: Logging into an *email account* requires a *password* and a *code* sent to your *device*.
 
 4. **Avoid Public Wi-Fi**:
-    - *Public Wi-Fi* is *insecure*, exposing *devices* to *malware* from *unknown users*.
-    - Use a *Virtual Private Network (VPN)* to create a *secure, tunneled connection* and *mask identity/location*.
-    - If *public Wi-Fi* is unavoidable, a *VPN* is a *minimum safeguard*.
+ - *Public Wi-Fi* is *insecure*, exposing *devices* to *malware* from *unknown users*.
+ - Use a *Virtual Private Network (VPN)* to create a *secure, tunneled connection* and *mask identity/location*.
+ - If *public Wi-Fi* is unavoidable, a *VPN* is a *minimum safeguard*.
 
 5. **Use Antivirus/Anti-Malware Software**:
-    - Install *antivirus* or *anti-malware software* to detect and *neutralize threats*.
-    - Acts as an *insurance policy* against *hackers* and *malicious software*.
-    - Regular *updates* ensure *protection* against *evolving threats*.
+ - Install *antivirus* or *anti-malware software* to detect and *neutralize threats*.
+ - Acts as an *insurance policy* against *hackers* and *malicious software*.
+ - Regular *updates* ensure *protection* against *evolving threats*.
 
 6. **Enable Data Backups and Restoration**:
-    - Maintain *regular backups* to protect *data* from *crashes* or *malware*.
-    - Tools like *Time Machine* (MacOS) provide *inbuilt backup solutions*.
-    - *Restoration* ensures *data recovery* without *significant loss*.
+ - Maintain *regular backups* to protect *data* from *crashes* or *malware*.
+ - Tools like *Time Machine* (MacOS) provide *inbuilt backup solutions*.
+ - *Restoration* ensures *data recovery* without *significant loss*.
 
 > **Key Strategies**: Implementing *layered defenses* significantly reduces *cyber attack risks*.
 
@@ -70,9 +70,9 @@ The table below summarizes key *strategies* to safeguard *devices* against *cybe
 - **Stay Informed**: Learn about *emerging threats* like *phishing*, *malware*, or *social engineering*.
 - **Question Suspicious Activity**: If something seems *weird* or *off* (e.g., unusual emails, links), *investigate* before acting.
 - **Prioritize Security Over Convenience**:
-    - *Security* and *convenience* are *inversely proportional*.
-    - Choosing *convenience* (e.g., weak passwords, public Wi-Fi) reduces *security*.
-    - Prioritizing *security* (e.g., MFA, VPNs) may reduce *convenience* but protects *data*.
+ - *Security* and *convenience* are *inversely proportional*.
+ - Choosing *convenience* (e.g., weak passwords, public Wi-Fi) reduces *security*.
+ - Prioritizing *security* (e.g., MFA, VPNs) may reduce *convenience* but protects *data*.
 
 > **Key Mindset**: A *proactive, security-focused approach* prevents *cyber threats* from exploiting *vulnerabilities*.
 

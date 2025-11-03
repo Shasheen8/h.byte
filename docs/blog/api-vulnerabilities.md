@@ -14,11 +14,11 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Broken Access Control** occurs when policies fail, leading to *unauthorized data disclosure* or allowing users to perform actions beyond their privileges, such as modifying or deleting information.
 
 - **Causes**:
-    - Infringement of the *principle of least privilege*.
-    - Use of *shared accounts*.
-    - *Metadata modification*.
-    - *CORS misconfiguration*.
-    - Bypassing access controls.
+ - Infringement of the *principle of least privilege*.
+ - Use of *shared accounts*.
+ - *Metadata modification*.
+ - *CORS misconfiguration*.
+ - Bypassing access controls.
 - **Impact**: Unauthorized access to sensitive data or system functions.
 
 > **Key Risk**: Attackers can exploit broken access controls to gain unauthorized permissions, compromising system integrity.
@@ -28,11 +28,11 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Cryptographic Failures** arise from weak cryptography practices, exposing data to unauthorized access.
 
 - **Causes**:
-    - Weak cryptographic *algorithms* or *protocols*.
-    - Data transmission in *plaintext* without encryption.
-    - Reuse of cryptographic *keys* or poor *key management*.
-    - Misconfigured *certificates*.
-    - Use of *deprecated cryptographic methods*.
+ - Weak cryptographic *algorithms* or *protocols*.
+ - Data transmission in *plaintext* without encryption.
+ - Reuse of cryptographic *keys* or poor *key management*.
+ - Misconfigured *certificates*.
+ - Use of *deprecated cryptographic methods*.
 - **Impact**: Sensitive data exposure due to inadequate encryption.
 
 > **Key Risk**: Weak cryptography allows attackers to intercept or decrypt sensitive information.
@@ -42,7 +42,7 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Injection Attacks** occur when *user-supplied data* is not properly validated, filtered, or sanitized in application input fields.
 
 - **Causes**:
-    - Use of *dynamic queries* or *non-parametrized calls* without validation.
+ - Use of *dynamic queries* or *non-parametrized calls* without validation.
 - **Impact**: Attackers can inject malicious code, leading to data breaches or system compromise.
 
 > **Key Risk**: Injections can manipulate application behavior, exposing data or enabling unauthorized actions.
@@ -52,8 +52,8 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Insecure Design** failures stem from a lack of security controls in the system’s design, leaving it vulnerable to specific attacks.
 
 - **Causes**:
-    - Absence of *business risk profiling* and *continuity structures*.
-    - Lack of a robust *risk management edifice*.
+ - Absence of *business risk profiling* and *continuity structures*.
+ - Lack of a robust *risk management edifice*.
 - **Note**: Secure design is more about *methodology and culture* than engineering.
 
 > **Key Risk**: Poor design opens exploitable gaps, undermining the system’s security foundation.
@@ -63,11 +63,11 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Security Misconfigurations** result from improper setup or maintenance of security settings.
 
 - **Causes**:
-    - Missing *security hardening* efforts.
-    - *Unnecessary features* enabled or installed.
-    - *Complex code* or *faulty error handling*.
-    - Use of *default accounts*.
-    - Running *old versions* of software or applications.
+ - Missing *security hardening* efforts.
+ - *Unnecessary features* enabled or installed.
+ - *Complex code* or *faulty error handling*.
+ - Use of *default accounts*.
+ - Running *old versions* of software or applications.
 - **Impact**: Systems become vulnerable to exploitation due to preventable oversights.
 
 > **Key Risk**: Misconfigurations provide easy entry points for attackers.
@@ -77,9 +77,9 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Identification and Authentication Failures** occur due to inadequate protection for user identification, authentication, and session management.
 
 - **Causes**:
-    - Vulnerability to *credential stuffing* and *brute-forcing*.
-    - Ineffective or missing *Multi-Factor Authentication (MFA)*.
-    - Weak validation of *session IDs*, leading to *token theft*.
+ - Vulnerability to *credential stuffing* and *brute-forcing*.
+ - Ineffective or missing *Multi-Factor Authentication (MFA)*.
+ - Weak validation of *session IDs*, leading to *token theft*.
 - **Impact**: Unauthorized access to user accounts or sessions.
 
 > **Key Risk**: Weak authentication enables attackers to impersonate legitimate users.
@@ -89,10 +89,10 @@ The **security of APIs** focuses on solutions to mitigate various vulnerabilitie
 **Insufficient Security Logging and Monitoring** hinders the ability to detect breaches or vulnerabilities.
 
 - **Causes**:
-    - Inadequate *logging* of auditable events (e.g., logins, payment transactions, user activity).
-    - Lack of *monitoring* for suspicious activity.
-    - Unclear *warnings* and *error messages*.
-    - Absence of proper *alerting*, *detection*, *escalation*, and *triaging* mechanisms.
+ - Inadequate *logging* of auditable events (e.g., logins, payment transactions, user activity).
+ - Lack of *monitoring* for suspicious activity.
+ - Unclear *warnings* and *error messages*.
+ - Absence of proper *alerting*, *detection*, *escalation*, and *triaging* mechanisms.
 - **Impact**: Delayed or missed detection of security incidents.
 
 > **Key Risk**: Without robust logging and monitoring, breaches may go unnoticed, amplifying damage.

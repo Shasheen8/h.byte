@@ -49,11 +49,11 @@ The *CPDoS attack workflow* involves the following steps:
 
 The table below summarizes the *types* of *CPDoS attacks* and their *mechanisms*:
 
-| **Attack Type**            | **Mechanism**                                                                                                                                                                                                                 |
+| **Attack Type** | **Mechanism** |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | HTTP Header Oversize (HHO) | Exploits *cache servers* accepting *larger header sizes* than the *origin server*. The *attacker* sends a *GET request* exceeding the *origin server’s limit* but within the *cache’s limit*, triggering an *error response*. |
-| HTTP Meta Character (HMC)  | Inserts *malicious meta characters* (e.g., `\n` (linebreak), `\r` (linefeed), `\a` (bell)) in the *HTTP request* to *bypass the cache*. The *origin server* flags these as *malicious*, returning an *error message*.         |
-| HTTP Method Override (HMO) | Uses headers like `X-HTTP-Method-Override` to *tunnel blocked HTTP methods* (e.g., *DELETE* via *POST*). The *override* causes the *origin server* to misinterpret the *request*, generating an *error response*.             |
+| HTTP Meta Character (HMC) | Inserts *malicious meta characters* (e.g., `\n` (linebreak), `\r` (linefeed), `\a` (bell)) in the *HTTP request* to *bypass the cache*. The *origin server* flags these as *malicious*, returning an *error message*. |
+| HTTP Method Override (HMO) | Uses headers like `X-HTTP-Method-Override` to *tunnel blocked HTTP methods* (e.g., *DELETE* via *POST*). The *override* causes the *origin server* to misinterpret the *request*, generating an *error response*. |
 
 > **Key Types**: *HHO*, *HMC*, and *HMO* exploit *cache discrepancies* to *induce errors*.
 
@@ -62,16 +62,16 @@ The table below summarizes the *types* of *CPDoS attacks* and their *mechanisms*
 Effective *protection strategies* mitigate *CPDoS attacks* and ensure *web resource availability*:
 
 - **Error Code Management**:
-    - Cache *error messages* based on *HTTP standard policies* (e.g., `404 Not Found`, `405 Method Not Allowed`, `410 Gone`, `501 Not Implemented`).
-    - Use `431 Request Header Fields Too Large` for *oversized headers* instead of `400 Bad Request` or `404 Not Found`.
+ - Cache *error messages* based on *HTTP standard policies* (e.g., `404 Not Found`, `405 Method Not Allowed`, `410 Gone`, `501 Not Implemented`).
+ - Use `431 Request Header Fields Too Large` for *oversized headers* instead of `400 Bad Request` or `404 Not Found`.
 - **CDN Configuration**:
-    - Properly configure *Content Delivery Networks (CDNs)* to handle *error codes* accurately, avoiding *generic responses* like `400 Bad Request`.
+ - Properly configure *Content Delivery Networks (CDNs)* to handle *error codes* accurately, avoiding *generic responses* like `400 Bad Request`.
 - **Cache Control**:
-    - Exclude *error pages* from *caching* by adding the header `Cache-Control: no-store` to each *error page*.
-    - Mitigates *HHO* and *HMC* by preventing *error response caching*.
+ - Exclude *error pages* from *caching* by adding the header `Cache-Control: no-store` to each *error page*.
+ - Mitigates *HHO* and *HMC* by preventing *error response caching*.
 - **Web Application Firewall (WAF)**:
-    - Deploy a *WAF* to *block malicious requests* before they reach the *origin server*.
-    - Choose a *WAF* with *secure CDN*, *DoS protection*, *SSL integration*, *intelligent caching*, and *robust customer support*.
+ - Deploy a *WAF* to *block malicious requests* before they reach the *origin server*.
+ - Choose a *WAF* with *secure CDN*, *DoS protection*, *SSL integration*, *intelligent caching*, and *robust customer support*.
 
 > **Key Protection**: *Proactive configuration* and *WAF deployment* safeguard against *CPDoS attacks*.
 

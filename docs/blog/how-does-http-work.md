@@ -12,12 +12,12 @@ The **Hypertext Transfer Protocol (HTTP)** is a cornerstone of the *internet* an
 *HTTP* is a *message-based*, *stateless* protocol that uses the *Transmission Control Protocol (TCP)* for *reliable* and *error-checked* data delivery. Key characteristics include:
 
 - **Default Ports**:
-    - *Port 80* for *HTTP*.
-    - *Port 443* for *HTTPS* (*HTTP over TLS*).
+ - *Port 80* for *HTTP*.
+ - *Port 443* for *HTTPS* (*HTTP over TLS*).
 - **Stateless Nature**:
-    - The *HTTP server* does not retain *state information* between requests.
+ - The *HTTP server* does not retain *state information* between requests.
 - **Message-Based**:
-    - Consists of *requests* from *clients* to *servers* and *responses* from *servers* to *clients*.
+ - Consists of *requests* from *clients* to *servers* and *responses* from *servers* to *clients*.
 
 > **Key Role**: *HTTP* facilitates *web communication* by enabling *client-server interactions* over *TCP*.
 
@@ -110,19 +110,19 @@ The *transfer length* indicates the *message-body length* after applying *transf
 *Persistent connections* optimize *HTTP* by reusing *TCP connections* for multiple *requests* and *responses*. Benefits include:
 
 - **Reduced CPU Usage**:
-    - Fewer *TCP connection openings/closings* save *CPU time* in *routers*, *clients*, *servers*, and *proxies*.
+ - Fewer *TCP connection openings/closings* save *CPU time* in *routers*, *clients*, *servers*, and *proxies*.
 - **Memory Efficiency**:
-    - Less memory used for *TCP protocol control blocks*.
+ - Less memory used for *TCP protocol control blocks*.
 - **Pipelining**:
-    - Allows *clients* to send multiple *requests* without waiting for *responses*, improving *efficiency* and reducing *elapsed time*.
+ - Allows *clients* to send multiple *requests* without waiting for *responses*, improving *efficiency* and reducing *elapsed time*.
 - **Network Optimization**:
-    - Reduces *network congestion* by minimizing *TCP open packets*.
-    - Allows *TCP* to better assess *network congestion state*.
+ - Reduces *network congestion* by minimizing *TCP open packets*.
+ - Allows *TCP* to better assess *network congestion state*.
 - **Lower Latency**:
-    - Eliminates *TCP handshake* time for subsequent *requests*.
+ - Eliminates *TCP handshake* time for subsequent *requests*.
 - **Graceful Evolution**:
-    - *HTTP* can report *errors* without closing *TCP connections*.
-    - Future *HTTP versions* can retry with *older semantics* if errors occur.
+ - *HTTP* can report *errors* without closing *TCP connections*.
+ - Future *HTTP versions* can retry with *older semantics* if errors occur.
 
 > **Key Advantage**: *Persistent connections* enhance *HTTP performance* by minimizing *connection overhead*.
 
@@ -131,14 +131,14 @@ The *transfer length* indicates the *message-body length* after applying *transf
 *HTTP* supports two built-in *authentication mechanisms*:
 
 - **Basic Authentication**:
-    - *Client* sends an *HTTP request*, and the *server* responds with a `401 Unauthorized` status.
-    - *Client* provides *username* and *password*, encoded in *Base64*.
-    - *Vulnerability*: Susceptible to *man-in-the-middle (MITM)* attacks due to *Base64* encoding.
-    - *Mitigation*: Use *TLS/SSL* to encrypt the *HTTP connection*.
+ - *Client* sends an *HTTP request*, and the *server* responds with a `401 Unauthorized` status.
+ - *Client* provides *username* and *password*, encoded in *Base64*.
+ - *Vulnerability*: Susceptible to *man-in-the-middle (MITM)* attacks due to *Base64* encoding.
+ - *Mitigation*: Use *TLS/SSL* to encrypt the *HTTP connection*.
 - **Digest Authentication**:
-    - Similar to *Basic* until credential input.
-    - *Client* uses *MD5 cryptographic hashing* with *nonce values* (arbitrary numbers) to prevent *replay attacks*.
-    - Offers improved *security* over *Basic* by avoiding *plaintext credentials*.
+ - Similar to *Basic* until credential input.
+ - *Client* uses *MD5 cryptographic hashing* with *nonce values* (arbitrary numbers) to prevent *replay attacks*.
+ - Offers improved *security* over *Basic* by avoiding *plaintext credentials*.
 
 > **Key Strategy**: *Digest authentication* with *TLS/SSL* provides stronger *security* against *interception attacks*.
 
@@ -146,16 +146,16 @@ The *transfer length* indicates the *message-body length* after applying *transf
 
 The following table summarizes key *HTTP features*:
 
-| Feature                  | Description                                     |
+| Feature | Description |
 |--------------------------|-------------------------------------------------|
-| *Protocol*               | *Stateless*, *message-based* over *TCP*.        |
-| *Ports*                  | *80* for *HTTP*, *443* for *HTTPS*.             |
-| *Methods*                | Includes *GET*, *POST*, *PUT*, *DELETE*, etc.   |
-| *Status Codes*           | *1xx* to *5xx* indicate *request outcomes*.     |
-| *Persistent Connections* | Reuse *TCP connections* for *efficiency*.       |
-| *Pipelining*             | Send multiple *requests* without waiting.       |
-| *Basic Authentication*   | *Base64-encoded* credentials, needs *TLS*.      |
-| *Digest Authentication*  | Uses *MD5 hashing* with *nonce* for *security*. |
+| *Protocol* | *Stateless*, *message-based* over *TCP*. |
+| *Ports* | *80* for *HTTP*, *443* for *HTTPS*. |
+| *Methods* | Includes *GET*, *POST*, *PUT*, *DELETE*, etc. |
+| *Status Codes* | *1xx* to *5xx* indicate *request outcomes*. |
+| *Persistent Connections* | Reuse *TCP connections* for *efficiency*. |
+| *Pipelining* | Send multiple *requests* without waiting. |
+| *Basic Authentication* | *Base64-encoded* credentials, needs *TLS*. |
+| *Digest Authentication* | Uses *MD5 hashing* with *nonce* for *security*. |
 
 ## Conclusion
 

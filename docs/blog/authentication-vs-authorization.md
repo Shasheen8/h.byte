@@ -29,13 +29,13 @@ Logging into a network or connecting to a *VPN* often involves the **AAA Securit
 
 ### How AAA Works
 - **Step 1: Authentication**:
-    - Users identify themselves, typically with a *username*.
-    - Additional *authentication factors* (e.g., passwords or biometrics) prove their identity.
+ - Users identify themselves, typically with a *username*.
+ - Additional *authentication factors* (e.g., passwords or biometrics) prove their identity.
 - **Step 2: Authorization**:
-    - Once authenticated, users gain access to resources based on their *username* or *role*.
-    - Example: An *administrator* has broader access than a *guest* or *user* account.
+ - Once authenticated, users gain access to resources based on their *username* or *role*.
+ - Example: An *administrator* has broader access than a *guest* or *user* account.
 - **Step 3: Accounting**:
-    - Tracks details like *login times*, *resources accessed*, *data transferred*, and *logout times*.
+ - Tracks details like *login times*, *resources accessed*, *data transferred*, and *logout times*.
 
 > **Pro Tip**: The AAA framework ensures secure access and provides auditable logs for network activity.
 
@@ -44,22 +44,22 @@ Logging into a network or connecting to a *VPN* often involves the **AAA Securit
 Authentication processes are familiar to most users and include various methods to prove identity:
 
 - **Traditional Methods**:
-    - Entering *passwords*.
-    - Answering *security questions*.
-    - Scanning a *fingerprint* to unlock a smartphone.
+ - Entering *passwords*.
+ - Answering *security questions*.
+ - Scanning a *fingerprint* to unlock a smartphone.
 - **Password-Less Techniques**:
-    - *Multi-Factor Authentication (MFA)*: Uses one-time passcodes sent via *SMS* or other methods.
-    - *Single Sign-On (SSO)*: Allows access to multiple systems with one set of credentials.
-    - **Benefit**: Generally more secure than passwords alone.
+ - *Multi-Factor Authentication (MFA)*: Uses one-time passcodes sent via *SMS* or other methods.
+ - *Single Sign-On (SSO)*: Allows access to multiple systems with one set of credentials.
+ - **Benefit**: Generally more secure than passwords alone.
 
 ### Local vs. Centralized Authentication
 - **Centralized Authentication**:
-    - Stores credentials in a *centralized database* for convenience (e.g., SSO).
-    - Risk: Potential single point of failure.
+ - Stores credentials in a *centralized database* for convenience (e.g., SSO).
+ - Risk: Potential single point of failure.
 - **Local Authentication**:
-    - Uses credentials stored on a *local device* (e.g., logging into a server).
-    - Benefit: Useful as a backup or for isolated systems.
-    - Challenge: Difficult to scale for large networks.
+ - Uses credentials stored on a *local device* (e.g., logging into a server).
+ - Benefit: Useful as a backup or for isolated systems.
+ - Challenge: Difficult to scale for large networks.
 
 > **Key Consideration**: Choose local authentication for specific use cases, but centralized systems are more practical for broad access management.
 
@@ -69,8 +69,8 @@ Authentication processes are familiar to most users and include various methods 
 - **Examples**: *Fingerprints*, *facial scans*.
 - **Process**: Compares user input to stored biometric data in a database.
 - **Advantages**:
-    - Hard to fake or replicate.
-    - Cannot be forgotten or lost like passwords.
+ - Hard to fake or replicate.
+ - Cannot be forgotten or lost like passwords.
 - **Applications**: Widely used in *smartphones*, *computers*, and *secure applications*.
 
 ### Hardware Authentication
@@ -88,12 +88,12 @@ Authentication processes are familiar to most users and include various methods 
 
 ### Authorization Mechanisms
 - **Access Tokens**:
-    - Contain *security credentialing information* about a user’s *privilege level* and *access rights*.
-    - Generated after authentication and checked when accessing resources.
+ - Contain *security credentialing information* about a user’s *privilege level* and *access rights*.
+ - Generated after authentication and checked when accessing resources.
 - **Role-Based Access Control (RBAC)**:
-    - Assigns access privileges based on a user’s *role* (e.g., admin, user, guest).
+ - Assigns access privileges based on a user’s *role* (e.g., admin, user, guest).
 - **Access Control Lists (ACLs)**:
-    - Specify which *users* or *processes* can access specific *objects* or *data* and what *operations* (e.g., read, write) are allowed.
+ - Specify which *users* or *processes* can access specific *objects* or *data* and what *operations* (e.g., read, write) are allowed.
 
 > **Key Insight**: Authorization ensures users only access resources they’re permitted to, maintaining system security.
 
@@ -102,21 +102,21 @@ Authentication processes are familiar to most users and include various methods 
 Using the **AAA framework**, *accounting* logs detailed information about user activity:
 
 - **Logged Data**:
-    - *When* a user logs in or out.
-    - *What* resources or data are accessed or transferred.
-    - *Who* is using the network and from *where*.
+ - *When* a user logs in or out.
+ - *What* resources or data are accessed or transferred.
+ - *Who* is using the network and from *where*.
 - **Benefits**:
-    - Enables *audits* to verify compliance and security.
-    - Ensures the *right users* access *appropriate resources* from *correct locations*.
-    - Monitors *resource usage* to maintain system integrity.
+ - Enables *audits* to verify compliance and security.
+ - Ensures the *right users* access *appropriate resources* from *correct locations*.
+ - Monitors *resource usage* to maintain system integrity.
 
 ### Tools for Accounting
 A **Security Information and Event Management (SIEM)** system is an efficient tool for collecting and analyzing event data:
 
 - **Functions**:
-    - Logs *user activity*, *logins*, and *system events*.
-    - Detects *unauthorized access* or *suspicious behavior*.
-    - Provides alerts and reports for security monitoring.
+ - Logs *user activity*, *logins*, and *system events*.
+ - Detects *unauthorized access* or *suspicious behavior*.
+ - Provides alerts and reports for security monitoring.
 - **Impact**: Enhances the ability to prevent and respond to security incidents.
 
 > **Pro Tip**: A SIEM system is critical for maintaining visibility and control over network security.

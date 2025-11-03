@@ -29,8 +29,8 @@ terraform init
 The `terraform plan` command generates an *execution plan* describing the infrastructure to be *created*, *updated*, or *destroyed* based on the provided configuration.
 
 - **Functions**:
-    - Highlights issues needing correction before execution.
-    - Performs *feasibility checks* for *syntax errors*, *API authentication*, and *state verification*.
+ - Highlights issues needing correction before execution.
+ - Performs *feasibility checks* for *syntax errors*, *API authentication*, and *state verification*.
 - **Output**: A summary of potential infrastructure changes.
 
 > **Pro Tip**: Reviewing the `terraform plan` output helps identify risks before modifying infrastructure.
@@ -67,26 +67,26 @@ terraform destroy
 Terraform offers a robust set of features that enhance its utility in infrastructure management:
 
 - **Orchestration**:
-  - Acts as the core of *orchestration* for creating cloud resources to deploy *end-to-end services*.
+ - Acts as the core of *orchestration* for creating cloud resources to deploy *end-to-end services*.
 - **Cloud Agnostic**:
-    - Supports major cloud providers (*AWS*, *Microsoft Azure*, *GCP*), reducing *vendor lock-in* concerns.
-    - The *Terraform Registry* provides documentation for all supported providers.
-    - Uses consistent *syntax patterns* across clouds, minimizing the learning curve for provider-specific APIs.
+ - Supports major cloud providers (*AWS*, *Microsoft Azure*, *GCP*), reducing *vendor lock-in* concerns.
+ - The *Terraform Registry* provides documentation for all supported providers.
+ - Uses consistent *syntax patterns* across clouds, minimizing the learning curve for provider-specific APIs.
 - **Declarative Syntax**:
-    - Configuration files are *declarative*, allowing engineers to specify the *desired state* without worrying about implementation details.
-    - Terraform internally handles the necessary steps to achieve the desired state.
+ - Configuration files are *declarative*, allowing engineers to specify the *desired state* without worrying about implementation details.
+ - Terraform internally handles the necessary steps to achieve the desired state.
 - **Modules**:
-    - Offers an ecosystem of *pre-built modules* for reusing Terraform code.
-    - Simplifies converting configurations into *modules* for modularity.
-    - Enables dividing complex infrastructure into *multiple modules* for reuse across projects.
+ - Offers an ecosystem of *pre-built modules* for reusing Terraform code.
+ - Simplifies converting configurations into *modules* for modularity.
+ - Enables dividing complex infrastructure into *multiple modules* for reuse across projects.
 - **State**:
-    - Tracks the *actual infrastructure* in a *state* file, shareable among team members for *collaboration*.
-    - Supports *remote state management* to prevent confusion during collaborative infrastructure changes.
+ - Tracks the *actual infrastructure* in a *state* file, shareable among team members for *collaboration*.
+ - Supports *remote state management* to prevent confusion during collaborative infrastructure changes.
 - **Automation**:
-    - Integrates with *change management* and *deployment pipelines* for consistent Terraform runs.
-    - Builds a *resource graph* to determine *resource dependencies*, creating or modifying non-dependent resources simultaneously for efficiency.
+ - Integrates with *change management* and *deployment pipelines* for consistent Terraform runs.
+ - Builds a *resource graph* to determine *resource dependencies*, creating or modifying non-dependent resources simultaneously for efficiency.
 - **Open Source**:
-    - Available as *open-source software* and an *Enterprise version*, catering to diverse needs.
+ - Available as *open-source software* and an *Enterprise version*, catering to diverse needs.
 
 ## Why Test Terraform Code?
 
@@ -94,9 +94,9 @@ Testing Terraform code is essential to understand why a *build* or *deployment* 
 
 - **Version Control**: Configurations are stored in files that can be committed to a *Version Control System (VCS)* like *GitHub*.
 - **Terraform Cloud**:
-    - Manages workflows across teams efficiently.
-    - Provides a *consistent, reliable environment* with *secure access* to *shared state* and *private data*.
-    - Offers *role-based access controls*, a *private registry* for sharing *modules* and *providers*, and more.
+ - Manages workflows across teams efficiently.
+ - Provides a *consistent, reliable environment* with *secure access* to *shared state* and *private data*.
+ - Offers *role-based access controls*, a *private registry* for sharing *modules* and *providers*, and more.
 
 > **Pro Tip**: Testing and version control ensure reliable infrastructure deployments and collaborative workflows.
 

@@ -29,36 +29,36 @@ The approach combines *network enumeration*, *web exploitation*, *shell access*,
 The following steps detail the process to compromise the *Teacher* machine:
 
 1. **Network Enumeration**:
-    - Used *Nmap* to scan the target IP `10.10.10.153` for open ports and services.
-    - **Findings**:
-        - *Port 80*: Hosting an *Apache* server with a *Moodle* service.
-    - Ran *Nikto* to scan for vulnerabilities in the web server.
-    - Used *dirb* to enumerate accessible directories on the *Moodle* site.
+ - Used *Nmap* to scan the target IP `10.10.10.153` for open ports and services.
+ - **Findings**:
+ - *Port 80*: Hosting an *Apache* server with a *Moodle* service.
+ - Ran *Nikto* to scan for vulnerabilities in the web server.
+ - Used *dirb* to enumerate accessible directories on the *Moodle* site.
 
 2. **Web Enumeration**:
-    - Discovered an *images* directory containing a file named `5.png`.
-    - The `5.png` image included a partial password for user *Giovanni*: `Th4C00lTheacha`, noted as missing a character.
-    - Used a *web fuzzer* with a *unique character wordlist* to identify the missing character, determining it was `#`.
-    - Constructed the full password: `Th4C00lTheacha#`.
-    - Logged into the *Moodle* account as *Giovanni* using the password `Th4C00lTheacha#`.
-    > **Key Challenge**: Identifying the missing password character required creative fuzzing.
+ - Discovered an *images* directory containing a file named `5.png`.
+ - The `5.png` image included a partial password for user *Giovanni*: `Th4C00lTheacha`, noted as missing a character.
+ - Used a *web fuzzer* with a *unique character wordlist* to identify the missing character, determining it was `#`.
+ - Constructed the full password: `Th4C00lTheacha#`.
+ - Logged into the *Moodle* account as *Giovanni* using the password `Th4C00lTheacha#`.
+ > **Key Challenge**: Identifying the missing password character required creative fuzzing.
 
 3. **Exploitation**:
-    - Identified the *Moodle* version as *3.4* and used *searchsploit* to find relevant exploits.
-    - Discovered a *remote code injection* vulnerability in one of the *Moodle* quizzes.
-    - Exploited the vulnerability to establish a *reverse shell* via *Ncat*, gaining access to the shell.
+ - Identified the *Moodle* version as *3.4* and used *searchsploit* to find relevant exploits.
+ - Discovered a *remote code injection* vulnerability in one of the *Moodle* quizzes.
+ - Exploited the vulnerability to establish a *reverse shell* via *Ncat*, gaining access to the shell.
 
 4. **Shell Stabilization**:
-    - Spawned a *Python TTY shell* to stabilize the initial shell access.
-    - Accessed the *MariaDB* MySQL database using credentials found in a *config file*.
+ - Spawned a *Python TTY shell* to stabilize the initial shell access.
+ - Accessed the *MariaDB* MySQL database using credentials found in a *config file*.
 
 5. **Privilege Escalation**:
-    - Exfiltrated credentials for user *Giovanni* from the *MySQL* database.
-    - Converted the *hashed password* to plaintext, revealing the password `expelled`.
-    - Logged into the system via *SSH* as *Giovanni* using the password `expelled`.
-    - Gained access to the *user.txt* flag.
-    - Navigated to the `/work/tmp/tmp` directory, which contained the *root.txt* flag with *read and write* privileges.
-    - Retrieved the *root.txt* flag.
+ - Exfiltrated credentials for user *Giovanni* from the *MySQL* database.
+ - Converted the *hashed password* to plaintext, revealing the password `expelled`.
+ - Logged into the system via *SSH* as *Giovanni* using the password `expelled`.
+ - Gained access to the *user.txt* flag.
+ - Navigated to the `/work/tmp/tmp` directory, which contained the *root.txt* flag with *read and write* privileges.
+ - Retrieved the *root.txt* flag.
 
 > **Key Insight**: Database credentials and permissive file access enabled rapid privilege escalation.
 
@@ -66,16 +66,16 @@ The following steps detail the process to compromise the *Teacher* machine:
 
 The following table summarizes the tools employed during the exploitation:
 
-| Tool           | Purpose                                      |
+| Tool | Purpose |
 |----------------|----------------------------------------------|
-| *Nmap*         | Network scanning for open ports and services |
-| *Nikto*        | Web server vulnerability scanning            |
-| *dirb*         | Directory enumeration on the web server      |
-| *Web Fuzzer*   | Identifying missing password character       |
-| *searchsploit* | Finding exploits for Moodle 3.4              |
-| *Ncat*         | Establishing reverse shell connection        |
-| *Python*       | Spawning a stabilized TTY shell              |
-| *CyberChef*    | Converting hashed password to plaintext      |
+| *Nmap* | Network scanning for open ports and services |
+| *Nikto* | Web server vulnerability scanning |
+| *dirb* | Directory enumeration on the web server |
+| *Web Fuzzer* | Identifying missing password character |
+| *searchsploit* | Finding exploits for Moodle 3.4 |
+| *Ncat* | Establishing reverse shell connection |
+| *Python* | Spawning a stabilized TTY shell |
+| *CyberChef* | Converting hashed password to plaintext |
 
 ## Final Thoughts
 

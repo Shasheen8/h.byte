@@ -85,11 +85,11 @@ Security engineering is unpredictable. A phishing campaign may demand Superman's
 **Quick adaptability scenarios**
 
 * **Active Breach Response:**
-    * **Superman Mode:** Leads the incident call, assigns tasks (e.g., "Isolate the server"), and updates the CTO/CISO.
-    * **Batman Mode:** Analyzes attack vectors post-crisis, designing new defenses (e.g., an email filter).
+ * **Superman Mode:** Leads the incident call, assigns tasks (e.g., "Isolate the server"), and updates the CTO/CISO.
+ * **Batman Mode:** Analyzes attack vectors post-crisis, designing new defenses (e.g., an email filter).
 * **Project Planning:**
-    * **Superman Mode:** Kicks off a penetration testing initiative with a clear goal: "Fin every weak spot."
-    * **Batman Mode:** Maps the attack surface, prioritizing high-risk areas like public APIs.
+ * **Superman Mode:** Kicks off a penetration testing initiative with a clear goal: "Fin every weak spot."
+ * **Batman Mode:** Maps the attack surface, prioritizing high-risk areas like public APIs.
 
 **How to Adapt Based on Situations**
 

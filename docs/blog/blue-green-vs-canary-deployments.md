@@ -54,9 +54,9 @@ date: Wed, 27 Apr 2022 16:08:00 +0000
 - **Increased Complexity**: Managing multiple software versions in a *live production environment*.
 - **Higher Costs**: Testing subsets adds overhead.
 - **Considerations**:
-    - *Code Refactoring*: How much does the new version differ from the old?
-    - *Performance and Scalability*: Does the new version perform better?
-    - *Edge Cases*: Are functional issues addressed?
+ - *Code Refactoring*: How much does the new version differ from the old?
+ - *Performance and Scalability*: Does the new version perform better?
+ - *Edge Cases*: Are functional issues addressed?
 
 > **Key Consideration**: Canary deployment is best for significant changes (e.g., integrating a *payment gateway*), not minor updates (e.g., changing a *background color*).
 
@@ -96,25 +96,25 @@ The following diagram illustrates the workflows for Blue-Green and Canary deploy
 
 ```mermaid
 graph TD
-    subgraph Blue-Green Deployment
-        A[Blue Environment<br>Live] -->|Deploy New Version| B[Green Environment<br>Idle]
-        B -->|Test & Validate| C[Switch Traffic<br>Green Live]
-        C -->|Idle| D[Blue Environment]
-    end
-    subgraph Canary Deployment
-        E[Current Version<br>Live] -->|Deploy to Subset| F[Canary Version<br>Small User Group]
-        F -->|Monitor & Test| G[Roll Out to All Users]
-        G -->|Stable| H[New Version Live]
-    end
+subgraph Blue-Green Deployment
+A[Blue Environment<br>Live] -->|Deploy New Version| B[Green Environment<br>Idle]
+B -->|Test & Validate| C[Switch Traffic<br>Green Live]
+C -->|Idle| D[Blue Environment]
+end
+subgraph Canary Deployment
+E[Current Version<br>Live] -->|Deploy to Subset| F[Canary Version<br>Small User Group]
+F -->|Monitor & Test| G[Roll Out to All Users]
+G -->|Stable| H[New Version Live]
+end
 
-    classDef live fill:#54a0de,stroke:#1a2b4a,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
-    classDef idle fill:#eb7550,stroke:#4a2b1f,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
-    classDef canary fill:#5dcf5d,stroke:#1a4a2b,stroke-width:1px,color:#e0e6f0,rx:10px, ry:10px;
-    class A,E,G,H live;
-    class B,D idle;
-    class F canary;
+classDef live fill:#54a0de,stroke:#1a2b4a,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+classDef idle fill:#eb7550,stroke:#4a2b1f,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+classDef canary fill:#5dcf5d,stroke:#1a4a2b,stroke-width:1px,color:#e0e6f0,rx:10px, ry:10px;
+class A,E,G,H live;
+class B,D idle;
+class F canary;
 
-    linkStyle default stroke:#b0bec5,stroke-width:1.5px,stroke-dasharray:5,2;
+linkStyle default stroke:#b0bec5,stroke-width:1.5px,stroke-dasharray:5,2;
 ```
 
 ## Conclusion

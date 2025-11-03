@@ -21,12 +21,12 @@ Before building the *program*, define its *scope* to ensure *clarity* and *align
 
 The *content* should educate employees on *cybersecurity essentials*. The table below summarizes key *content areas* and their *focus*:
 
-| **Content Area**      | **Focus**                                                                                                                                                                                                          |
+| **Content Area** | **Focus** |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cybersecurity Threats | Educate on *phishing attacks* (deceptive emails stealing *credentials*), *malware* (malicious software compromising *systems*), and *social engineering* (manipulating users to disclose *sensitive information*). |
-| Best Practices        | Teach *strong passwords* and *password managers*, avoiding *public Wi-Fi* for *sensitive tasks*, and keeping *software updated* to patch *vulnerabilities*.                                                        |
-| Company Policies      | Highlight *data protection policies* for *sensitive information* and prompt *suspicious activity* reporting.                                                                                                       |
-| Incident Response     | Instruct on *whom to notify* during a *cyberattack* and steps to *minimize impact* of a *data breach*.                                                                                                             |
+| Best Practices | Teach *strong passwords* and *password managers*, avoiding *public Wi-Fi* for *sensitive tasks*, and keeping *software updated* to patch *vulnerabilities*. |
+| Company Policies | Highlight *data protection policies* for *sensitive information* and prompt *suspicious activity* reporting. |
+| Incident Response | Instruct on *whom to notify* during a *cyberattack* and steps to *minimize impact* of a *data breach*. |
 
 **Training Formats**:
 - *Online modules*: Self-paced, accessible anywhere.
@@ -46,12 +46,12 @@ The *content* should educate employees on *cybersecurity essentials*. The table 
 Choose a *delivery method* based on *scope* and *audience*:
 
 - **Online Training**:
-    - Ideal for *large, distributed workforces*.
-    - *Customizable* to *individual needs*.
-    - *Cost-effective* and *scalable*.
+ - Ideal for *large, distributed workforces*.
+ - *Customizable* to *individual needs*.
+ - *Cost-effective* and *scalable*.
 - **In-Person Training**:
-    - Suited for *smaller groups* or *interactive sessions*.
-    - Enables *questions* and *immediate feedback*.
+ - Suited for *smaller groups* or *interactive sessions*.
+ - Enables *questions* and *immediate feedback*.
 
 **Tips for Effective Online Training**:
 1. *Keep it short*: Modules of *10–15 minutes* maintain *engagement*.
@@ -65,10 +65,10 @@ Choose a *delivery method* based on *scope* and *audience*:
 
 Evaluate the *program’s impact* to ensure *knowledge retention* and *behavior change*. The table below outlines *assessment methods* and *metrics*:
 
-| **Assessment Method** | **Description**                                            | **Metric**                                                                                                                          |
+| **Assessment Method** | **Description** | **Metric** |
 |-----------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Quizzes               | Test *cybersecurity knowledge*.                            | *Quiz scores* to measure *understanding*.                                                                                           |
-| Surveys               | Gauge *employee confidence* in *best practices*.           | *Survey responses* to assess *confidence levels*.                                                                                   |
+| Quizzes | Test *cybersecurity knowledge*. | *Quiz scores* to measure *understanding*. |
+| Surveys | Gauge *employee confidence* in *best practices*. | *Survey responses* to assess *confidence levels*. |
 | Behavioral Monitoring | Check adherence to *policies* (e.g., *password strength*). | *Phishing simulation success rates* and *incident reports* to track *recognition improvements* and *suspicious activity reporting*. |
 
 **Adjustments**:

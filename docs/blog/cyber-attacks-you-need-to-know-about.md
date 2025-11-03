@@ -30,11 +30,11 @@ An *SQL Injection* attack is when an attacker injects *malicious SQL queries* in
 
 - **Mechanism**: SQL statements control your *web application database* and can be used to *bypass security measures* if *user inputs* are not properly *sanitized*.
 - **Capabilities**: A successful SQL injection can:
-    - Read *sensitive data* from the database.
-    - Modify *database data*.
-    - Execute *administration operations* on the database.
-    - Recover the content of a *given file* present on the DBMS file system.
-    - Issue *commands* to the operating system.
+ - Read *sensitive data* from the database.
+ - Modify *database data*.
+ - Execute *administration operations* on the database.
+ - Recover the content of a *given file* present on the DBMS file system.
+ - Issue *commands* to the operating system.
 - **Impact**: Compromises database integrity and exposes sensitive information.
 
 > **Key Consideration**: Sanitize user inputs to prevent SQL injection vulnerabilities.
@@ -44,8 +44,8 @@ This type of attack uses a *third-party website* to inject *malicious JavaScript
 
 - **Execution**: The code runs within a user’s *browser*. Upon initial injection, the site typically isn’t fully controlled by the attacker. Instead, the *bad actor* attaches their *malicious code* on top of a *legitimate website*, tricking browsers into executing their *malware* whenever the site is loaded.
 - **Types**:
-    - **Stored XSS**: Injected script is *stored* on the server (e.g., in a *forum post* or *comment*). Every user visiting the infected page is affected.
-    - **Reflected XSS**: Injected script is served as a *response* to a request (e.g., *search results page*).
+ - **Stored XSS**: Injected script is *stored* on the server (e.g., in a *forum post* or *comment*). Every user visiting the infected page is affected.
+ - **Reflected XSS**: Injected script is served as a *response* to a request (e.g., *search results page*).
 - **Impact**: Steals user data or session tokens via browser execution.
 
 > **Key Risk**: XSS exploits trusted websites to deliver malware to unsuspecting users.
@@ -55,8 +55,8 @@ This type of attack uses a *third-party website* to inject *malicious JavaScript
 
 - **Common Form**: *Phishing* is one of the most common types of attack used in this case.
 - **Process**:
-    - The *delinquent* investigates the intended *victim* to gather *background information*, such as *potential points of entry* and *weak security protocols*.
-    - The attacker gains the *victim’s trust* and provides *stimuli* for actions that break *security practices*, such as revealing *sensitive information* or granting access to *critical resources*.
+ - The *delinquent* investigates the intended *victim* to gather *background information*, such as *potential points of entry* and *weak security protocols*.
+ - The attacker gains the *victim’s trust* and provides *stimuli* for actions that break *security practices*, such as revealing *sensitive information* or granting access to *critical resources*.
 - **Impact**: Exploits human trust to bypass technical defenses.
 
 > **Pro Tip**: Educate users to recognize social engineering tactics, like suspicious requests.
@@ -81,9 +81,9 @@ These attacks are used to *spread malware* by targeting *insecure websites* with
 These attacks *compromise* a specific group of *end-users* by infecting a user’s *computer* with *malicious code* to get access to the *network*.
 
 - **Process**:
-    - Attackers *profile* their target to determine the *websites* they frequently visit.
-    - They identify *vulnerabilities* in these websites to *exploit*.
-    - The *compromised website* infects the user’s *network*, allowing attackers to gain *entry* and move *laterally* to other systems.
+ - Attackers *profile* their target to determine the *websites* they frequently visit.
+ - They identify *vulnerabilities* in these websites to *exploit*.
+ - The *compromised website* infects the user’s *network*, allowing attackers to gain *entry* and move *laterally* to other systems.
 - **Impact**: Targets specific groups for network infiltration.
 
 > **Key Risk**: Water-hole attacks exploit trusted websites to target specific users.
@@ -172,38 +172,38 @@ The following diagram categorizes the cyber attacks by their primary method:
 
 ```mermaid
 graph TD
-    A[Cyber Attacks] -------> B[Network-Based]
-    A -----> C[User-Targeted]
-    A ---------> D[System-Based]
-    A ----> E[Insider Threats]
+A[Cyber Attacks] -------> B[Network-Based]
+A -----> C[User-Targeted]
+A ---------> D[System-Based]
+A ----> E[Insider Threats]
 
-    B --> B1[Man In The Middle]
-    B --> B2[DNS Hijacking]
-    B --> B3[DoS/DDoS]
-    B --> B4[Botnet Attacks]
+B --> B1[Man In The Middle]
+B --> B2[DNS Hijacking]
+B --> B3[DoS/DDoS]
+B --> B4[Botnet Attacks]
 
-    C --> C1[Phishing]
-    C --> C2[Social Engineering]
-    C --> C3[Redirection]
-    C --> C4[Password Attacks]
+C --> C1[Phishing]
+C --> C2[Social Engineering]
+C --> C3[Redirection]
+C --> C4[Password Attacks]
 
-    D --> D1[SQL Injection]
-    D --> D2[Cross-Site Scripting]
-    D --> D3[Drive-By Attacks]
-    D --> D4[Water-Hole Attack]
-    D --> D5[Malware Attacks]
-    D --> D6[Crypto-Mining Attacks]
+D --> D1[SQL Injection]
+D --> D2[Cross-Site Scripting]
+D --> D3[Drive-By Attacks]
+D --> D4[Water-Hole Attack]
+D --> D5[Malware Attacks]
+D --> D6[Crypto-Mining Attacks]
 
-    E --> E1[Insider Attack]
+E --> E1[Insider Attack]
 
-    classDef root fill:#54a0de,stroke:#1a2b4a,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
-    classDef category fill:#eb7550,stroke:#4a2b1f,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
-    classDef attack fill:#5dcf5d,stroke:#1a4a2b,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
-    class A root;
-    class B,C,D,E category;
-    class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,D5,D6,E1 attack;
+classDef root fill:#54a0de,stroke:#1a2b4a,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+classDef category fill:#eb7550,stroke:#4a2b1f,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+classDef attack fill:#5dcf5d,stroke:#1a4a2b,stroke-width:1px,color:#e0e6f0,rx:10px,ry:10px;
+class A root;
+class B,C,D,E category;
+class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,D5,D6,E1 attack;
 
-    linkStyle default stroke:#b0bec5,stroke-width:1.5px,stroke-dasharray:5,2;
+linkStyle default stroke:#b0bec5,stroke-width:1.5px,stroke-dasharray:5,2;
 ```
 
 ## Conclusion

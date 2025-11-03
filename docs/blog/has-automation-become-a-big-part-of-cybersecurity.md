@@ -10,13 +10,13 @@ date: Wed, 30 Jun 2021 12:16:00 +0000
 Organizations face threats from multiple vectors:
 
 - **Internal Threats**:
-    - *Data theft* by insiders.
-    - *Unauthorized device access*.
-    - *Lack of security culture*.
-    - *Insufficient employee knowledge*.
+ - *Data theft* by insiders.
+ - *Unauthorized device access*.
+ - *Lack of security culture*.
+ - *Insufficient employee knowledge*.
 - **External Threats**:
-    - *Vulnerabilities* in systems.
-    - *Malware* such as *viruses*, *worms*, and other malicious software.
+ - *Vulnerabilities* in systems.
+ - *Malware* such as *viruses*, *worms*, and other malicious software.
 
 The *internet* is a cornerstone for setting up *infrastructure*, developing *business models*, and improving *productivity*. However, the *rise and complexity* of *cyberattacks* necessitate robust *countermeasures* to maintain *security* and reap the benefits of *technology*.
 
@@ -88,12 +88,12 @@ Once a *threat* breaches a *network*, it becomes a *race* to contain it before *
 
 The following table summarizes how *automation* addresses *cybersecurity challenges*:
 
-| Area                  | Automation Benefit                                             |
+| Area | Automation Benefit |
 |-----------------------|----------------------------------------------------------------|
-| *Data Gathering*      | Scales *threat intelligence* analysis with *machine learning*. |
-| *Defensive Race*      | Speeds up *protection* development for *attack vectors*.       |
-| *Offensive Race*      | Enables *rapid deployment* of *defenses* across *systems*.     |
-| *Infection Detection* | Identifies *infected hosts* through *behavior analysis*.       |
+| *Data Gathering* | Scales *threat intelligence* analysis with *machine learning*. |
+| *Defensive Race* | Speeds up *protection* development for *attack vectors*. |
+| *Offensive Race* | Enables *rapid deployment* of *defenses* across *systems*. |
+| *Infection Detection* | Identifies *infected hosts* through *behavior analysis*. |
 
 ## Conclusion
 

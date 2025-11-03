@@ -21,14 +21,14 @@ While *CMS platforms* simplify *content creation* and *publication*, their *popu
 
 *CMS platforms* face various *cyber attacks* that exploit *vulnerabilities* to compromise *data* and *functionality*. The table below summarizes these *attacks* and their *mechanisms*:
 
-| **Attack Type**         | **Mechanism**                                                                                                                                                       |
+| **Attack Type** | **Mechanism** |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Data Manipulation       | Uses *SQL injections* or *parameter changes* to execute *malicious SQL statements* via *entry fields*, altering *data*.                                             |
-| Accessing Data          | Employs *SQL injections* or *Cross-Site Scripting (XSS)* to inject *malicious code* (e.g., *browser-side scripts*, *negative SQL statements*) to steal *user data*. |
-| Code Injection          | Injects *malicious code* into the *server*, causing *data loss*, *corruption*, or *denial of access*.                                                               |
-| Spam                    | *Web crawlers* collect *email addresses* for *spam*, or *application vulnerabilities* turn the *server* into a *spam relay*.                                        |
-| Broken Authentication   | Exploits *poor authentication mechanisms* (e.g., *weak error handling*, *insecure password recovery*, *no brute-force protection*) to gain *unauthorized access*.   |
-| Sensitive Data Exposure | Fails to *encrypt sensitive data* (e.g., *credit cards*, *authentication details*), compromising *integrity* and *confidentiality* during *transmission*.           |
+| Data Manipulation | Uses *SQL injections* or *parameter changes* to execute *malicious SQL statements* via *entry fields*, altering *data*. |
+| Accessing Data | Employs *SQL injections* or *Cross-Site Scripting (XSS)* to inject *malicious code* (e.g., *browser-side scripts*, *negative SQL statements*) to steal *user data*. |
+| Code Injection | Injects *malicious code* into the *server*, causing *data loss*, *corruption*, or *denial of access*. |
+| Spam | *Web crawlers* collect *email addresses* for *spam*, or *application vulnerabilities* turn the *server* into a *spam relay*. |
+| Broken Authentication | Exploits *poor authentication mechanisms* (e.g., *weak error handling*, *insecure password recovery*, *no brute-force protection*) to gain *unauthorized access*. |
+| Sensitive Data Exposure | Fails to *encrypt sensitive data* (e.g., *credit cards*, *authentication details*), compromising *integrity* and *confidentiality* during *transmission*. |
 
 > **Key Threat**: *CMS vulnerabilities* expose *sensitive data* and *system functionality* to *exploitation*.
 
@@ -37,38 +37,38 @@ While *CMS platforms* simplify *content creation* and *publication*, their *popu
 To protect *CMS platforms* from *malware* and *breaches*, implement the following *security measures*:
 
 1. **Strong Passwords**:
-    - Use *complex passwords* or *passphrases* (e.g., random word combinations) that are *hard to guess* but *easy to remember*.
-    - Leverage *password managers* to generate and store *secure passwords*.
-    - Apply to both *user* and *administrator* accounts.
+ - Use *complex passwords* or *passphrases* (e.g., random word combinations) that are *hard to guess* but *easy to remember*.
+ - Leverage *password managers* to generate and store *secure passwords*.
+ - Apply to both *user* and *administrator* accounts.
 
 2. **Multi-Factor Authentication (MFA)**:
-    - Enable *MFA* to add *extra verification* steps (e.g., *code sent to phone* or *email*).
-    - Enhances *account security* beyond *passwords*.
+ - Enable *MFA* to add *extra verification* steps (e.g., *code sent to phone* or *email*).
+ - Enhances *account security* beyond *passwords*.
 
 3. **Assign Access Roles**:
-    - Utilize *role-based access control* in *CMS platforms* (e.g., *WordPress*, *Squarespace*):
-        - *Contributor*: Drafts *posts* but cannot *publish*.
-        - *Author*: Publishes *own posts*.
-        - *Editor*: Edits and publishes *own* and *others’ posts*.
-        - *Administrator*: Full *site control* (e.g., *settings changes*).
-    - Limit *administrative access* to *essential personnel*.
+ - Utilize *role-based access control* in *CMS platforms* (e.g., *WordPress*, *Squarespace*):
+ - *Contributor*: Drafts *posts* but cannot *publish*.
+ - *Author*: Publishes *own posts*.
+ - *Editor*: Edits and publishes *own* and *others’ posts*.
+ - *Administrator*: Full *site control* (e.g., *settings changes*).
+ - Limit *administrative access* to *essential personnel*.
 
 4. **Layered Security**:
-    - Deploy a *Web Application Firewall (WAF)* to filter *malicious requests* and protect against *attacks*.
-    - Enhances *security* for *CMS websites*.
+ - Deploy a *Web Application Firewall (WAF)* to filter *malicious requests* and protect against *attacks*.
+ - Enhances *security* for *CMS websites*.
 
 5. **Check Your Plugins**:
-    - Keep *plugins* and *themes* updated to the *latest versions*.
-    - Choose *reputable plugins* with *strong reviews* and *high download counts*.
-    - Avoid *pirated* or *untrusted plugins/themes* to prevent *malware*.
+ - Keep *plugins* and *themes* updated to the *latest versions*.
+ - Choose *reputable plugins* with *strong reviews* and *high download counts*.
+ - Avoid *pirated* or *untrusted plugins/themes* to prevent *malware*.
 
 6. **SSL Certificate**:
-    - Install an *SSL certificate* to enable *HTTPS*, ensuring *secure data transmission* between *server* and *client*.
-    - Protects *sensitive data* like *credit card information*.
+ - Install an *SSL certificate* to enable *HTTPS*, ensuring *secure data transmission* between *server* and *client*.
+ - Protects *sensitive data* like *credit card information*.
 
 7. **Keep Backups at Every Stage**:
-    - Maintain *incremental backups* to restore *compromised websites* to a *previous state*.
-    - Perform *backups* after identifying and fixing *security weaknesses*.
+ - Maintain *incremental backups* to restore *compromised websites* to a *previous state*.
+ - Perform *backups* after identifying and fixing *security weaknesses*.
 
 > **Key Strategies**: *Layered security measures* safeguard *CMS platforms* from *cyber threats*.
 
