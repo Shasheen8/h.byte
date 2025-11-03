@@ -1,0 +1,530 @@
+/* HealthyByte Custom Styles */
+
+/* ============================================
+   Brand Colors and Theme Variables
+   ============================================ */
+
+:root {
+  --hb-primary: #FF5722;      /* Deep Orange */
+  --hb-accent: #3F51B5;       /* Indigo */
+  --hb-success: #4CAF50;      /* Green */
+  --hb-warning: #FF9800;      /* Orange */
+  --hb-danger: #F44336;       /* Red */
+}
+
+/* ============================================
+   Enhanced Blockquote Styling
+   ============================================ */
+
+.md-typeset blockquote {
+  border-left: 4px solid var(--hb-primary);
+  background-color: rgba(255, 87, 34, 0.08);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0.25rem;
+  font-style: normal;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: rgba(255, 87, 34, 0.12);
+}
+
+.md-typeset blockquote strong {
+  color: var(--hb-primary);
+}
+
+/* ============================================
+   Code Block Improvements
+   ============================================ */
+
+/* Code blocks (multi-line) */
+.md-typeset pre {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre {
+  background-color: #1e1e1e;
+  border: 1px solid #404040;
+}
+
+.md-typeset pre > code {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #212121;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre > code {
+  color: #e0e0e0;
+}
+
+/* Inline code */
+.md-typeset code {
+  background-color: rgba(63, 81, 181, 0.1);
+  color: #3F51B5;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.85em;
+  border: 1px solid rgba(63, 81, 181, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(100, 149, 237, 0.15);
+  color: #82AAFF;
+  border: 1px solid rgba(100, 149, 237, 0.3);
+}
+
+/* Copy button styling */
+.md-clipboard {
+  color: var(--hb-primary);
+}
+
+.md-clipboard:hover {
+  color: var(--hb-accent);
+}
+
+/* ============================================
+   Table Enhancements
+   ============================================ */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 0.85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--hb-primary);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0.8rem;
+  text-align: left;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background-color: rgba(255, 87, 34, 0.05);
+}
+
+/* ============================================
+   Mermaid Diagram Styling
+   ============================================ */
+
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .mermaid {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure Mermaid text is visible in both modes */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mermaid dark mode text fix */
+[data-md-color-scheme="slate"] .mermaid .nodeLabel,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel,
+[data-md-color-scheme="slate"] .mermaid .titleText,
+[data-md-color-scheme="slate"] .mermaid text {
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+/* Mermaid light mode text */
+[data-md-color-scheme="default"] .mermaid .nodeLabel,
+[data-md-color-scheme="default"] .mermaid .edgeLabel,
+[data-md-color-scheme="default"] .mermaid .titleText,
+[data-md-color-scheme="default"] .mermaid text {
+  fill: #000 !important;
+  color: #000 !important;
+}
+
+/* Mermaid node backgrounds for dark mode */
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node circle,
+[data-md-color-scheme="slate"] .mermaid .node ellipse,
+[data-md-color-scheme="slate"] .mermaid .node polygon {
+  fill: rgba(255, 255, 255, 0.15) !important;
+  stroke: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Mermaid node backgrounds for light mode */
+[data-md-color-scheme="default"] .mermaid .node rect,
+[data-md-color-scheme="default"] .mermaid .node circle,
+[data-md-color-scheme="default"] .mermaid .node ellipse,
+[data-md-color-scheme="default"] .mermaid .node polygon {
+  fill: rgba(63, 81, 181, 0.1) !important;
+  stroke: rgba(63, 81, 181, 0.6) !important;
+}
+
+/* Mermaid edges/lines */
+[data-md-color-scheme="slate"] .mermaid .edgePath path,
+[data-md-color-scheme="slate"] .mermaid line {
+  stroke: rgba(255, 255, 255, 0.5) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .edgePath path,
+[data-md-color-scheme="default"] .mermaid line {
+  stroke: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Mermaid cluster/subgraph backgrounds */
+[data-md-color-scheme="slate"] .mermaid .cluster rect {
+  fill: rgba(255, 255, 255, 0.05) !important;
+  stroke: rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-md-color-scheme="default"] .mermaid .cluster rect {
+  fill: rgba(63, 81, 181, 0.05) !important;
+  stroke: rgba(63, 81, 181, 0.3) !important;
+}
+
+/* ============================================
+   List Improvements
+   ============================================ */
+
+.md-typeset ul, .md-typeset ol {
+  margin: 1em 0;
+  line-height: 1.8;
+}
+
+.md-typeset li > p {
+  margin: 0.5em 0;
+}
+
+/* Task list checkboxes */
+.md-typeset .task-list-item {
+  list-style-type: none;
+}
+
+.md-typeset .task-list-control [type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* ============================================
+   Typography Enhancements
+   ============================================ */
+
+/* Emphasize key terms */
+.md-typeset em {
+  color: var(--hb-primary);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.md-typeset strong {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+/* Better heading spacing */
+.md-typeset h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--hb-primary);
+}
+
+/* ============================================
+   Admonition (Callout) Styling
+   ============================================ */
+
+.md-typeset .admonition {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.md-typeset .admonition.note {
+  border-left: 4px solid #2196F3;
+}
+
+.md-typeset .admonition.tip {
+  border-left: 4px solid #00BCD4;
+}
+
+.md-typeset .admonition.warning {
+  border-left: 4px solid #FF9800;
+}
+
+.md-typeset .admonition.danger {
+  border-left: 4px solid #F44336;
+}
+
+/* ============================================
+   Navigation Enhancements
+   ============================================ */
+
+/* Active navigation item */
+.md-nav__item--active > .md-nav__link {
+  color: var(--hb-primary);
+  font-weight: 600;
+}
+
+/* Hover effects */
+.md-nav__link:hover {
+  color: var(--hb-primary);
+}
+
+/* ============================================
+   Footer Customization
+   ============================================ */
+
+.md-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.md-footer-meta {
+  background-color: #263238 !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Copyright text visibility */
+.md-footer-meta__inner {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.md-copyright {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-md-color-scheme="slate"] .md-copyright {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Footer link styling for better visibility */
+.md-footer__link {
+  color: #424242;
+}
+
+[data-md-color-scheme="slate"] .md-footer__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.md-footer__title {
+  color: #212121;
+}
+
+[data-md-color-scheme="slate"] .md-footer__title {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Social icons in footer - Make them visible! */
+.md-social__link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.md-social__link:hover {
+  color: var(--hb-primary) !important;
+}
+
+[data-md-color-scheme="slate"] .md-social__link {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+[data-md-color-scheme="slate"] .md-social__link:hover {
+  color: var(--hb-primary) !important;
+}
+
+/* ============================================
+   Button and Link Styling
+   ============================================ */
+
+.md-typeset a {
+  color: var(--hb-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--hb-accent);
+}
+
+/* ============================================
+   Tag Styling
+   ============================================ */
+
+.md-tag {
+  background-color: var(--hb-primary);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   Card-like Sections (for lists)
+   ============================================ */
+
+.md-typeset .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.md-typeset .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.md-typeset .card:hover {
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   Scroll Progress Bar
+   ============================================ */
+
+.md-header__inner {
+  position: relative;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--hb-primary), var(--hb-accent));
+  width: 0%;
+  transition: width 0.1s;
+}
+
+/* ============================================
+   Mobile Responsiveness
+   ============================================ */
+
+@media screen and (max-width: 76.1875em) {
+  .md-typeset table:not([class]) {
+    font-size: 0.75rem;
+  }
+  
+  .mermaid {
+    overflow-x: auto;
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  .md-header,
+  .md-footer,
+  .md-sidebar {
+    display: none;
+  }
+  
+  .md-typeset a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+/* ============================================
+   Accessibility Improvements
+   ============================================ */
+
+/* Focus indicators */
+.md-typeset a:focus,
+.md-typeset button:focus {
+  outline: 2px solid var(--hb-primary);
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.md-skip {
+  background-color: var(--hb-primary);
+}
+
+/* ============================================
+   Custom Badges/Labels
+   ============================================ */
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  margin: 0 0.2rem;
+}
+
+.badge-new {
+  background-color: var(--hb-success);
+  color: white;
+}
+
+.badge-updated {
+  background-color: var(--hb-accent);
+  color: white;
+}
+
+.badge-critical {
+  background-color: var(--hb-danger);
+  color: white;
+}
+
+/* ============================================
+   Smooth Scrolling
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   Loading Animation for Mermaid
+   ============================================ */
+
+.mermaid:empty::before {
+  content: "Loading diagram...";
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+

@@ -1,21 +1,52 @@
-site_name: HealthyByte 
-site_description: HealthyByte Playground
+site_name: HEALTHYBYTE
+site_description: Your go-to blog for enhancing digital security awareness
 site_author: Shasheen Bandodkar
-site_url: https://sitename.example
+site_url: https://healthybyte.net
 
 docs_dir: docs
 
 theme:
   name: material
   logo: assets/logo.png
+  favicon: assets/logo.png
+  language: en
+
   icon:
     repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
   features:
+    # Navigation enhancements
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
     - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+
+    # Search enhancements
+    - search.suggest
+    - search.highlight
+    - search.share
+
+    # Content enhancements
     - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+
+    # Table of contents
+    - toc.follow
+    - toc.integrate
 
   palette:
+    # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: deep orange
@@ -23,26 +54,217 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+
+    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep orange
+      primary: deep orange
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
   font:
     text: Roboto
     code: Roboto Mono
-  
-  plugins:
-    - search
-    - rss:
-      length: 100
-    - minify:
-        minify_html: true
-        minify_css: true
-        minify_js: true
 
+# Plugins - MOVED TO ROOT LEVEL (was incorrectly nested under theme)
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      
+  - mermaid2:
+      version: 10.6.1
+      
+  - tags:
+      tags_file: tags.md
+      
+  - rss:
+      match_path: blog/.*
+      length: 100
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+  - minify:
+      minify_html: true
+      minify_css: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
+
+# Markdown extensions for enhanced formatting
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+      toc_depth: 3
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+
+  - pymdownx.betterem:
+      smart_enable: all
+
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
+
+  - pymdownx.smartsymbols
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Shasheen8/h.byte
+      name: GitHub Repository
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com
+      name: Follow on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com
+      name: Connect on LinkedIn
+    - icon: fontawesome/solid/rss
+      link: /feed_rss_created.xml
+      name: RSS Feed
+
+  generator: false
+
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our content and whether users find what
+      they're searching for.
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Repository information
 repo_name: h.byte
 repo_url: https://github.com/Shasheen8/h.byte
-edit_uri: edit/main/content/
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Shasheen Bandodkar - HealthyByte
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+      - Security Fundamentals:
+          - blog/authentication-vs-authorization.md
+          - blog/basics-of-identity-and-access-management.md
+          - blog/multi-factor-authentication-weaknesses.md
+          - blog/what-is-a-social-engineering-attack.md
+          - blog/what-is-zero-trust-architecture.md
+          - blog/what-is-security-by-design.md
+      - Cloud Security (AWS):
+          - blog/how-i-passed-my-aws-security-specialty.md
+          - blog/securing-infrastructure-as-code-for-aws.md
+          - blog/securing-your-data-in-aws-using-aws-key-management-service-kms.md
+          - blog/how-to-secure-your-aws-cloudtrail.md
+          - blog/stateful-vs-stateless-connections-in-aws-vpcs.md
+          - blog/how-does-amazon-simple-storage-service-s3-work.md
+      - Web Security & Vulnerabilities:
+          - blog/api-vulnerabilities.md
+          - blog/oauth-20-authentication-vulnerabilities.md
+          - blog/what-is-web-application-security.md
+          - blog/how-can-you-exploit-a-jwt-token.md
+          - blog/how-can-one-exploit-a-cors-policy.md
+          - blog/what-is-a-no-sql-injection-attack.md
+          - blog/what-is-a-buffer-overflow-attack.md
+          - blog/what-is-a-race-condition-vulnerability.md
+          - blog/what-is-javascript-prototype-pollution.md
+          - blog/soap-protocol-vulnerabilities.md
+      - DevOps & Infrastructure:
+          - blog/automate-your-infrastructure-with-terraform.md
+          - blog/how-can-kubernetes-help-you.md
+          - blog/strategies-to-secure-containerized-environments.md
+          - blog/blue-green-vs-canary-deployments.md
+          - blog/server-less-architecture-faas.md
+          - blog/should-you-shift-left-or-shift-right.md
+      - Security Incidents & Analysis:
+          - blog/summary-of-the-global-crowdstrike-outage.md
+          - blog/cyberhaven-extension-vulnerability.md
+          - blog/the-uber-data-breach-summary.md
+          - blog/the-revil-ransomware-kaseya.md
+          - blog/what-you-need-to-know-about-the-solarwinds-hack.md
+          - blog/zero-day-vulnerability-log4j.md
+      - Security Programs & Processes:
+          - blog/what-is-a-security-program-management.md
+          - blog/how-to-build-an-effective-security-awareness-training-program.md
+          - blog/how-to-create-and-scope-out-an-incident-response-plan.md
+          - blog/why-is-threat-modeling-important.md
+          - blog/why-is-a-bug-bounty-program-important-for-a-company.md
+          - blog/streamline-your-sdlc-during-soc2-audits-to-make-them-effortless.md
+          - blog/why-do-you-need-a-soar-to-improve-your-security-teams-performance.md
+      - Career & Learning:
+          - blog/want-to-get-into-cybersecurity.md
+          - blog/why-is-cybersecurity-so-hard.md
+          - blog/how-i-passed-my-comptia-cysa.md
+          - blog/how-i-passed-the-ewpt-exam.md
+          - blog/superman-vs-batman-leadership-styles-in-security-engineering.md
+      - Hands-on Labs & CTFs:
+          - blog/hack-the-box-edition-curling.md
+          - blog/hack-the-box-edition-teacher.md
+          - blog/vulnhub-edition-derpnstink.md
+          - blog/what-is-the-metasploit-framework-and-how-is-it-used.md
+      - Emerging Technologies:
+          - blog/what-is-cryptocurrency.md
+          - blog/what-is-ethereum.md
+          - blog/what-is-dogecoin.md
+          - blog/what-is-the-metaverse.md
+          - blog/top-10-new-upcoming-technology-trends.md
+          - blog/what-are-passkeys-and-how-do-they-work.md
+      - Privacy & Tools:
+          - blog/should-online-privacy-be-a-necessity-or-an-option.md
+          - blog/use-a-vpn-to-keep-your-data-safe.md
+          - blog/what-is-the-general-data-protection-regulation.md
+          - blog/why-you-need-a-raspberry-pi-now.md
+          - blog/why-you-need-to-use-regular-expressions-now.md
